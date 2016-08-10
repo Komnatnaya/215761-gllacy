@@ -8,40 +8,73 @@
 		<header class="main-header">
         	<div class="container">
 				<div class="index-logo">
-        			<img src="img/index-logo.png" width="" height="" alt="Магазин «Глейси»">
+        			<img src="img/index-logo.png" width="#" height="#" alt="Магазин «Глейси»">
       			</div>
 				<nav class="main-navigation">
 					<ul>
-						<li>
-							<a href="#">Каталог</a>
+						<li class="menu-catalog">
+							<a class="menu-link" href="#">Каталог</a>
+							<ul class="drop-menu">
+								<li class="drop-menu-head"><a href="#">Новинки</a></li>
+								<li class="drop-menu-link"><a href="#">Сливочное</a></li>
+								<li class="drop-menu-link"><a href="#">Щербеты</a></li>
+								<li class="drop-menu-link"><a href="#">Фруктовый лед</a></li>
+								<li class="drop-menu-link"><a href="#">Мелорин</a></li>
+							</ul>
 						</li>
 						<li>
-							<a href="#">Доставка и оплата</a>
+							<a class="menu-link" href="#">Доставка и оплата</a>
 						</li>
 						<li>
-							<a href="#">О Компании</a>
+							<a class="menu-link" href="#">О Компании</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a class="user-block-btn search" href="#">Поиск</a>
-					<a class="user-block-btn login" href="#">Вход</a>
-					<a class="user-block-btn basket" href="#">Пусто</a>
+					<div class="search">
+						<a class="user-block-btn search-btn" href="#">Поиск</a>
+						<div class="search-block">
+							<form action="#" method="get">
+								<input type="search" name="search" placeholder="Что ищем?">
+							</form>
+						</div>
+					</div>
+					<div class="login">
+						<a class="user-block-btn login-btn" href="#">Вход</a>
+						<div class="login-block">
+							<form action="#" method="post">
+								<input type="email" name="login" placeholder="Электронная почта">
+								<input type="password" name="password" placeholder="Пароль">
+								<input type="submit" value="Войти" class="btn">
+								<div class="help">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="basket">
+						<a class="user-block-btn basket-btn" href="#">Пусто</a>
+					</div>
 				</div>
 				<div class="contact">
 					<span>С 10 до 20, ежедневно<br>
 						<b>8 812 450-25-25</b></span>
 				</div>
 			</div>			
-			<div class="promo">
-				Крем-брюле и пломбир
-				с малиновым джемом
-			</div>
-			<a class="red-btn" href="#">Давайте оба!</a>
 			<div class="slider">
-				<input type="radio" name="toggle" checked>
-				<input type="radio" name="toggle">
-				<input type="radio" name="toggle">
+				<img src="#" width="#" height="#" alt="Две мороженки">
+				<img src="#" width="#" height="#" alt="Свечение">
+				<p>Крем-брюле и пломбир
+				с малиновым джемом</p>
+			</div>
+			<a class="red-btn" href="#"><p>Давайте оба!</p></a>
+			<div class="pagination">
+				<form class="toggle" action="#" method="post">
+					<input type="radio" name="toggle" checked>
+					<input type="radio" name="toggle">
+					<input type="radio" name="toggle">
+				</form>	
 			</div>
     	</header>
 		<main class="container">
@@ -49,12 +82,12 @@
 				<div class="discount-item">
 					<h2>Малинка даром!</h2>
 					<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="red-btn" href="#">Хочу варенье!</a>
+					<a class="btn" href="#">Хочу варенье!</a>
 				</div>
 				<div class="discount-item">
 					<h2>Шоколадки даром!</h2>
 					<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a class="red-btn" href="#">Хочу шоколадки!</a>
+					<a class="btn" href="#">Хочу шоколадки!</a>
 				</div>
 			</div>
 			<div class="popular">
@@ -83,23 +116,27 @@
 					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 				</div>
 			</div>
-			<div class="info">
+			<div class="seo">
 				<h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-				<div class="info-item">
-					<img src="#" width="#" height="#" alt="Мороженое">
-					<p>Все наше мороженое изготавливается на собственном производстве, с использованем современного оборудования и проверенных временем технологий.</p>
+				<div class="seo-item">
+					<div class="ice-cream">
+						<img src="#" width="#" height="#" alt="Мороженое">
+						<p>Все наше мороженое изготавливается на собственном производстве, с использованем современного оборудования и проверенных временем технологий.</p>
+					</div>
+					<div class="leaf">
+						<img src="#" width="#" height="#" alt="Листик">
+						<p>Для приготовления мороженого используются настоящие сливки м молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+					</div>
 				</div>
-				<div class="info-item">
-					<img src="#" width="#" height="#" alt="Листик">
-					<p>Для приготовления мороженого используются настоящие сливки м молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-				</div>
-				<div class="info-item">
-					<img src="#" width="#" height="#" alt="Коровка">
-					<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает договременное сотрудничество.</p>
-				</div>
-				<div class="info-item">
-					<img src="#" width="#" height="#" alt="Термометр">
-					<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позовляет сохранить превосходный вкус.</p>
+				<div class="seo-item">
+					<div class="cow">
+						<img src="#" width="#" height="#" alt="Коровка">
+						<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает договременное сотрудничество.</p>
+					</div>
+					<div class="thermometer">
+						<img src="#" width="#" height="#" alt="Термометр">
+						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позовляет сохранить превосходный вкус.</p>
+					</div>
 				</div>
 			</div>
 			<div class="blog-and-sub">
@@ -111,7 +148,7 @@
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 					<form action="#" method="post">
 						<input type="email" name="email" placeholder="Электронная почта">
-						<input type="submit" name="email-submit" class="red-btn">
+						<input type="submit" name="email-submit" class="btn">
 					</form>
 				</div>
 			</div>
@@ -127,12 +164,21 @@
 								Для заказов по телефону:<br>
 								<b>8 812 450-25-25</b><br>
 								(с 10 до 20 ежедневно)</p>
-							<a class="red-btn" href="#">Форма обратной связи</a>
+							<a class="btn" href="#">Форма обратной связи</a>
 						</section>
 					</div>
 				</div>
 			</div>
-		</main>	
+		</main>
+		<div class="feedback">
+			<form action="#" method="post">
+				<span>Мы обязательно вам ответим!</span>
+				<input type="text" name="username" placeholder="Как вас зовут?">
+				<input type="email" name="user-email" placeholder="Ваша почта для ответа?">
+				<textarea rows="5" cols="#" name="text" placeholder="Напишите что-нибудь..."></textarea>
+				<input type="submit" value="Отправить" class="btn">
+			</form>
+		</div>
 		<footer class="main-footer">
 			<div class="container">
 				<div class="footer-social">
