@@ -8,7 +8,7 @@
 		<header class="main-header">
         	<div class="container">
 				<div class="index-logo">
-        			<img src="img/index-logo.png" width="#" height="#" alt="Магазин «Глейси»">
+					<a href="#"><img src="img/index-logo.png" width="#" height="#" alt="Магазин «Глейси»"></a>
       			</div>
 				<nav class="main-navigation">
 					<ul>
@@ -57,20 +57,22 @@
 						<a class="user-block-btn basket-btn" href="#">2 товара</a>
 						<div class="user-basket">
 							<table>
-								<tr class="line1">
-									<td><img src="#" width="#" height="#" alt="Удалить"><img src="#" width="#" height="#" alt="Пломбир с апельсиновым джемом"></td>
+								<tr>
+									<td><img src="#" width="#" height="#" alt="Удалить"></td>
+									<td><img src="#" width="#" height="#" alt="Пломбир с апельсиновым джемом"></td>
 									<td><p>Пломбир с апельсиновым джемом</p></td>
 									<td>1,5 кг х <span class="price">200 руб.</span></td>
-									<td class="subtotal">300 руб.</td>
+									<td>300 руб.</td>
 								</tr>
-								<tr class="line2">
-									<td><img src="#" width="#" height="#" alt="Удалить"><img src="#" width="#" height="#" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+								<tr>
+									<td><img src="#" width="#" height="#" alt="Удалить"></td>
+									<td><img src="#" width="#" height="#" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 									<td><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
 									<td>1,5 кг х <span class="price">300 руб.</span></td>
-									<td class="subtotal">450 руб.</td>
+									<td>450 руб.</td>
 								</tr>
-								<tr class="line3">
-									<td colspan="4" class="total"><b>Итого: 750 руб.</b></td>
+								<tr>
+									<td colspan="5" class="total"><b>Итого: 750 руб.</b></td>
 								</tr>
 							</table>
 							<a href="#" class="btn">Оформить заказ</a>
@@ -111,8 +113,14 @@
 					<span>Жирность:</span>
 					<label>
 						<input type="radio" name="fatty" value="zero">0%
-						<input type="radio" name="fatty" value="ten" checked>до 10% 
-						<input type="radio" name="fatty" value="thirty">до 30% 
+					</label>
+					<label>
+						<input type="radio" name="fatty" value="ten" checked>до 10%
+					</label>
+					<label>
+						<input type="radio" name="fatty" value="thirty">до 30%
+					</label>
+					<label>
 						<input type="radio" name="fatty" value="more">выше 30% 
 					</label>
 				</div>
@@ -120,9 +128,17 @@
 					<span>Наполнители:</span>
 					<label>
 						<input type="checkbox" name="choko" checked>шоколадные
+					</label>
+					<label>
 						<input type="checkbox" name="sugar" checked>сахарные присыпки
+					</label>
+					<label>
 						<input type="checkbox" name="fruit">фрукты
+					</label>
+					<label>
 						<input type="checkbox" name="syrup">сиропы
+					</label>
+					<label>
 						<input type="checkbox" name="jam">джемы
 					</label>
 				</div>
@@ -201,7 +217,6 @@
 				<a href="#" class="last-page-btn">&gt;</a>
 			</div>
 		</main>
-		<hr>
 		<footer class="main-footer">
 			<div class="container">
 				<div class="footer-social">
