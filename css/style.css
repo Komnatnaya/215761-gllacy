@@ -1,58 +1,26 @@
 body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
-}
-
-header {
 	color: #ffffff;
+	background: #849d8f;
 }
 
-nav.main-navigation {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: bold;
-}
-
-.user-block {
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 500;
-}
-
-.contact {
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: bold;
-}
-
-.contact b {
-	font-size: 22px;
-	line-height: 24px;
-} 
-
-.description {
-	font-size: 60px;
-	line-height: 60.35px;
-	font-weight: bold;
-}
-
-.description a {
-	font-size: 32px;
-	line-height: 44px;
-}
-
-.discount-item {
-	font-size: 18px;
-	line-height: 22px;
-	font-weight: bold;
-}
-
-.discount-item h2 {
+h1 {
 	font-size: 35px;
 	line-height: 41px;
 }
 
-.discount-item a {
-	line-height: 24px;
+h2 {
+	font-size: 35px;
+	line-height: 41px;
 }
 
+h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 22px;
+}
