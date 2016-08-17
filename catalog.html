@@ -8,11 +8,11 @@
     </head>
     <body>
 		<header class="main-header">
-        	<div class="container">
+        	<div class="container clearfix">
+				<div class="index-logo">
+					<a href="index.html"><img src="img/index-logo.svg" alt="Магазин «Глейси»"></a>
+      			</div>
 				<nav class="main-navigation">
-					<div class="index-logo">
-						<a href="index.html"><img src="img/index-logo.svg" alt="Магазин «Глейси»"></a>
-      				</div>
 					<ul>
 						<li class="menu-catalog">
 							<a class="menu-link" href="#">Каталог</a>
@@ -87,7 +87,7 @@
 				</div>
 			</div>			
     	</header>
-		<main class="container">
+		<main class="container clearfix">
 			<div class="breadcrumbs-block">
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
@@ -96,7 +96,7 @@
 				</ul>
 			</div>
 			<h1>Сливочное мороженое</h1>
-			<form action="#" method="get" class="filter container">
+			<form action="#" method="get" class="filter">
 				<fieldset class="sort-block">
 					<legend>Сортировка:</legend>
 					<select name="sorting">
@@ -108,7 +108,7 @@
 				</fieldset>
 				<fieldset class="price-block">
 					<legend>Цена: 100 руб. - 500 руб.</legend>
-						<input type="range" name="price" id="min-max-price" min="0" max="800" step="100" value="500">
+					<input type="range" name="price" id="min-max-price" min="0" max="800" step="100" value="500">
 				</fieldset>
 				<fieldset class="fatty">
 					<legend>Жирность:</legend>
@@ -136,7 +136,7 @@
 				</fieldset>
 				<input type="submit" class="filter-btn" value="Применить">
 			</form>
-			<div class="product">
+			<div class="product clearfix">
 				<div class="product-item">					
 					<img src="img/ice-orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					<span><b>310₽</b>/кг</span>
@@ -212,10 +212,10 @@
 		<footer class="main-footer">
 			<div class="container">
 				<div class="footer-social">
-          			<a class="social-btn-twit" href="#" title="Твиттер"></a>
-          			<a class="social-btn-inst" href="#" title="Инстаграм"></a>
-					<a class="social-btn-fb" href="#" title="Фейстбук"></a>
-					<a class="social-btn-vk" href="#" title="Вконтакте"></a>
+          			<a class="social-btn-twit" href="#" title="Твиттер">tw</a>
+          			<a class="social-btn-inst" href="#" title="Инстаграм">inst</a>
+					<a class="social-btn-fb" href="#" title="Фейстбук">fb</a>
+					<a class="social-btn-vk" href="#" title="Вконтакте">vk</a>
         		</div>
 				<div class="footer-nav">
 					<ul>
