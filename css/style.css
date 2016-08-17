@@ -28,8 +28,7 @@ h4 {
 	line-height: 22px;
 }
 
-.popular-item img,
-.product-item img {
+.popular-item img:first-child {
 	border-radius: 50%;
 }
 .main-header {
