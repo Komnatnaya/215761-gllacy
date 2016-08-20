@@ -16,7 +16,6 @@ h1 {
 h2 {
 	font-size: 35px;
 	line-height: 41px;
-	margin-top: 15px;
 }
 
 h3 {
@@ -215,18 +214,16 @@ h4 {
 }
 
 .btn {
-	display: block;
+	display: inline-block;
 	background: #e74b36;
 	text-decoration: none;
 	color: #ffffff;
 	font-weight: bold;
-	border-radius: 15px;
 }
 
 .description .btn {
 	font-size: 32px;
 	line-height: 44px;
-	width: 280px;
 	margin: -28px auto;
 	padding: 13px 40px;
 	border-radius: 35px;
@@ -245,6 +242,7 @@ h4 {
 	border-radius: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
+	text-align: right;
 }
 
 .discount-item:last-child {
@@ -252,15 +250,23 @@ h4 {
 	background: #653a23 url("../img/fon-choсo.jpg") no-repeat center top;
 }
 
+.discount-item h2 {
+	margin-top: 15px;
+	margin-bottom: 9px;
+	text-align: left;
+}
+
 .discount-item p {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 22px;
+	text-align: left;
+	margin-bottom: 44px;
 }
 
 .discount-item .btn {
-	width: 167px;
-	padding: 13px 20px;
+	border-radius: 23px;
+	padding: 12px 22px;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 24px;
