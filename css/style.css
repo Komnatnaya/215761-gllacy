@@ -16,6 +16,7 @@ h1 {
 h2 {
 	font-size: 35px;
 	line-height: 41px;
+	margin-top: 15px;
 }
 
 h3 {
@@ -55,14 +56,15 @@ h4 {
 	min-height: 73px;
 	width: 160px;
 	margin-left: -5px;
-	padding-top: 10px;
+	margin-right: 12px;
+	padding-top: 15px;
 }
 
 .main-navigation {
 	float: left;
 	min-height: 73px;
 	width: 406px;
-	padding-top: 13px;
+	padding-top: 20px;
 }
 
 .main-navigation ul {
@@ -79,15 +81,24 @@ h4 {
 .menu-link {
 	display: block;
 	color: #ffffff;
-	padding: 8px 14px;
+	padding: 7px 14px;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 18px;
 }
 
+.menu-link:hover {
+	text-decoration: none;
+	color: #323232;
+	background: #ffffff;
+	border-radius: 15px;
+}
 
 .main-navigation .drop-menu {
+	display: none;
 	position: absolute;
+	top: 34px;
+	left: -6px;
 	background-color: #ffffff;
 	width: 143px;
 	height: 171px;
@@ -95,11 +106,15 @@ h4 {
 	padding: 0;
 }
 
+.menu-catalog:hover .drop-menu {
+	display: block;
+}
+
 .drop-menu a {
 	display: block;
 	width: 143px;
 	height: 28px;
-	padding: 4px 20px;
+	padding: 5px 5px 4px 20px;
 	text-decoration: none;
 	color: #323232;
 	font-size: 14px;
@@ -120,17 +135,101 @@ h4 {
 	float: right;
 	min-height: 73px;
 	width: 560px;
+	padding-top: 26px;
+	text-align: right;
 } 
+
+.user-block > div {
+	display: inline-block;
+}
+
+.search {
+	position: relative;
+}
+
+.search-block {
+	display: none;
+	position: absolute;
+}
+
+.search:hover .search-block {
+	display: block;
+}
+
+.login {
+	position: relative;
+}
+
+.login-block {
+	display: none;
+	position: absolute;
+}
+
+.login:hover .login-block {
+	display: block;
+}
+
+.user-block-btn {
+	padding: 8px 16px 8px 45px;
+	border-radius: 15px;
+	color: #ffffff;
+	background: #9db1a5;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+}
+
 
 .contact {
 	float: right;
 	min-height: 45px;
 	width: 267px;
+	text-align: right;
 }
 
+.contact span {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.contact span:last-child {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+
 .slide {
-	width: 647px;
+	width: 680px;
 	margin: 0 auto;
+}
+
+.description {
+	text-align: center;
+}
+.description p {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.btn {
+	display: block;
+	background: #e74b36;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 15px;
+}
+
+.description .btn {
+	font-size: 32px;
+	line-height: 44px;
+	width: 280px;
+	margin: -28px auto;
+	padding: 13px 40px;
+	border-radius: 35px;
 }
 
 .discount {
@@ -142,10 +241,29 @@ h4 {
 	width: 560px;
 	min-height: 229px;
 	margin-right: 26px;
+	background: #c40d38 url("../img/fon-raspberry.jpg") no-repeat center top;
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .discount-item:last-child {
 	margin-right: 0;
+	background: #653a23 url("../img/fon-choсo.jpg") no-repeat center top;
+}
+
+.discount-item p {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.discount-item .btn {
+	width: 167px;
+	padding: 13px 20px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .popular {
