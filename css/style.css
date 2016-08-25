@@ -5,6 +5,7 @@
 body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
+	font-weight: normal;
 	color: #ffffff;
 	background: #849d8f;
 }
@@ -285,7 +286,6 @@ h4 {
 .discount-item .btn {
 	border-radius: 23px;
 	padding: 12px 22px;
-	font-weight: bold;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -338,27 +338,41 @@ h4 {
 	min-height: 306px;
 	margin-bottom: 40px;
 	color: #323232;
-	padding: 1px 20px 10px 20px;
-	border-radius: 13px;
+	padding: 23px 20px 10px 20px;
 	background: #f1e7ce url("../img/wafer-fon.jpg") no-repeat;
+	border-radius: 14px;
 }
 
-.seo-item {
+
+.seo h3 {
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+.seo-block {
 	float: left;
 	width: 540px;
 	margin-right: 26px;
 }
 
-.seo-item:last-child {
+.seo-block:last-child {
 	margin-right: 0;
 }
+.seo-item {
+	position: relative;
+}
 
-.seo-item h3 {
-	font-weight: 500;
+.seo-item img {
+	position: absolute;
 }
 
 .seo-item p {
 	padding-left: 57px;
+	padding-top: 8px;
+	padding-right: 5px;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .blog-and-sub {
@@ -371,12 +385,51 @@ h4 {
 	margin-right: 26px;
 	min-height: 220px;
 	width: 560px;
+	padding: 24px 250px 20px 20px;
+	background: #ffffff url("../img/fon-strawberry.jpg") no-repeat;
+	border-radius: 14px;
+}
+
+.blog h4 {
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 7px;
+}
+
+.blog a {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #323232;
+	padding-right: 235px;
 }
 
 .sub {
 	float: left;
 	min-height: 220px;
 	width: 560px;
+	border-radius: 14px;
+	background-color: #ffffff;
+	border: 5px solid rgba(0, 0, 0, 0);
+	border-image-source: url("../img/fon-post.png");
+	border-image-slice: 5;
+	padding: 10px 20px;
+	text-align: right;
+}
+
+.sub p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #5a5a5a;
+	margin-bottom: 37px;
+	text-align: left;
+}
+
+.sub .btn {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 12px 20px;
+	border-radius: 35px;
 }
 
 .map-contacts {
