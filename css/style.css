@@ -221,11 +221,24 @@ h4 {
 .slide {
 	width: 680px;
 	margin: 0 auto;
+	position: relative;
+	padding-top: 210px;
+}
+
+.slider img {
+	position: absolute;
+	z-index: 5;
+	top: -35px;
+	left: 16px;
 }
 
 .description {
+	position: relative;
+	z-index: 10;
 	text-align: center;
+	margin-bottom: 40px;
 }
+
 .description p {
 	font-weight: bold;
 	font-size: 60px;
@@ -254,6 +267,8 @@ h4 {
 
 .discount-item {
 	float: left;
+	position: relative;
+	z-index: 9;
 	width: 560px;
 	min-height: 229px;
 	margin-right: 26px;
@@ -425,11 +440,20 @@ h4 {
 	text-align: left;
 }
 
+.sub .email {
+	width: 364px;
+	height: 44px;
+	margin-right: 10px;
+	border-radius: 4px;
+	border: 1px solid #d3d3d2;
+}
+
 .sub .btn {
 	font-size: 18px;
 	line-height: 24px;
 	padding: 12px 20px;
 	border-radius: 35px;
+	border: none;
 }
 
 .map-contacts {
