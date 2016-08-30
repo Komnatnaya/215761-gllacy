@@ -17,7 +17,7 @@
 					<div class="main-navigation">
 						<ul>
 							<li class="menu-catalog">
-								<a class="menu-link" href="catalog.html">Каталог</a>
+								<a class="menu-link active" href="catalog.html">Каталог</a>
 								<ul class="drop-menu">
 									<li class="drop-menu-head"><a href="#">Новинки</a></li>
 									<li><a href="catalog.html">Сливочное</a></li>
@@ -102,40 +102,48 @@
 			<form action="#" method="get" class="filter">
 				<fieldset class="sort-block">
 					<legend>Сортировка:</legend>
-					<select name="sorting">
-						<option value="popularity">по популярности</option>
-						<option value="cheap">сначала недорогие</option>
-						<option value="expensive">сначала дорогие</option>
-						<option value="fatty">по жирности</option>
-					</select>
+					<div class="filter-block">
+						<select name="sorting">
+							<option value="popularity">по популярности</option>
+							<option value="cheap">сначала недорогие</option>
+							<option value="expensive">сначала дорогие</option>
+							<option value="fatty">по жирности</option>
+						</select>
+					</div>
 				</fieldset>
 				<fieldset class="price-block">
 					<legend>Цена: 100 руб. - 500 руб.</legend>
-					<input type="range" name="price" id="min-max-price" min="0" max="800" step="100" value="500">
+					<div class="filter-block">
+						<input type="range" name="price" id="min-max-price" min="0" max="800" step="100" value="500">
+					</div>
 				</fieldset>
 				<fieldset class="fatty">
 					<legend>Жирность:</legend>
-					<input type="radio" name="fatty" id="fatty-zero" value="zero">
-					<label for="fatty-zero">0%</label>
-					<input type="radio" name="fatty" id="fatty-ten" value="ten" checked>
-					<label for="fatty-ten">до 10%</label>
-					<input type="radio" name="fatty" id="fatty-thirty" value="thirty">
-					<label for="fatty-thirty">до 30%</label>
-					<input type="radio" name="fatty" id="fatty-more" value="more">
-					<label for="fatty-more">выше 30%</label>
+					<div class="filter-block">
+						<input type="radio" name="fatty" id="fatty-zero" value="zero">
+						<label for="fatty-zero">0%</label>
+						<input type="radio" name="fatty" id="fatty-ten" value="ten" checked>
+						<label for="fatty-ten">до 10%</label>
+						<input type="radio" name="fatty" id="fatty-thirty" value="thirty">
+						<label for="fatty-thirty">до 30%</label>
+						<input type="radio" name="fatty" id="fatty-more" value="more">
+						<label for="fatty-more">выше 30%</label>
+					</div>
 				</fieldset>
 				<fieldset class="additive">
 					<legend>Наполнители:</legend>
-					<input type="checkbox" id="addchoko" value="choko" checked>
-					<label for="addchoko">шоколадные</label>
-					<input type="checkbox" id="addsugar" value="sugar" checked>
-					<label for="addsugar">сахарные присыпки</label>
-					<input type="checkbox" id="addfruit" value="fruit">
-					<label for="addfruit">фрукты</label>
-					<input type="checkbox" id="addsyrup" value="syrup">
-					<label for="addsyrup">сиропы</label>
-					<input type="checkbox" id="addjam" value="jam">
-					<label for="addjam">джемы</label>
+					<div class="filter-block">
+						<input type="checkbox" id="addchoko" value="choko" checked>
+						<label for="addchoko">шоколадные</label>
+						<input type="checkbox" id="addsugar" value="sugar" checked>
+						<label for="addsugar">сахарные присыпки</label>
+						<input type="checkbox" id="addfruit" value="fruit">
+						<label for="addfruit">фрукты</label>
+						<input type="checkbox" id="addsyrup" value="syrup">
+						<label for="addsyrup">сиропы</label>
+						<input type="checkbox" id="addjam" value="jam">
+						<label for="addjam">джемы</label>
+					</div>
 				</fieldset>
 				<input type="submit" class="filter-btn" value="Применить">
 			</form>

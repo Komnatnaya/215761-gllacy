@@ -154,25 +154,21 @@
 				</div>
 				<div class="seo clearfix">
 					<h3>Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-					<div class="seo-block">
-						<div class="seo-item">
-							<div class="seo-img ice"></div>
-							<p>Все наше мороженое изготавливается на собственном производстве, с использованем современного оборудования и проверенных временем технологий.</p>
-						</div>
-						<div class="seo-item">
-							<div class="seo-img leaf"></div>
-							<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-						</div>
+					<div class="seo-item">
+						<img src="img/mini-ice.svg" height="49" width="49" alt="Мороженое">
+						<p>Все наше мороженое изготавливается на собственном производстве, с использованем современного оборудования и проверенных временем технологий.</p>
 					</div>
-					<div class="seo-block">
-						<div class="seo-item">
-							<div class="seo-img cow"></div>
-							<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-						</div>
-						<div class="seo-item">
-							<div class="seo-img therm"></div>
-							<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-						</div>
+					<div class="seo-item">
+						<img src="img/cow.svg"  height="49" width="49"alt="Коровка">
+						<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+					</div>
+					<div class="seo-item">
+						<img src="img/leaf.svg"  height="49" width="49"alt="Листик">
+						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+					</div>
+					<div class="seo-item">
+						<img src="img/thermometer.svg" height="49" width="49" alt="Термометр">
+						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 					</div>
 				</div>
 				<div class="blog-and-sub clearfix">
@@ -184,23 +180,22 @@
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 						<form action="#" method="post">
 							<input type="email" name="email" placeholder="Электронная почта" class="email">
-							<input type="submit" name="email-submit" class="btn">
+							<input type="submit" name="email-submit" class="btn" value="Отправить">
 						</form>
 					</div>
 				</div>
 			</main>
 			<div class="map-contacts">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=raiyM26F2clyJIkhZW9uxgWeLUJxfe3k&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-				<!-- <img src="img/map.jpg" width="1200" height="430" alt="Карта"> -->
+				<div id="yandex-map" class="yandex-map"></div>
 				<div class="container clearfix">
 					<div class="contact-us">
-						<p class="address">Адрес главного офиса<br> 
-							и офлайн магазина:<br>
-							<span>ул. Большая Конюшенная<br>
-							19/8, Санкт-Петербург</span></p>			
-						<p>Для заказов по телефону:<br></p>
-						<p class="tel"><span>8 812 450-25-25</span><br>
-							(с 10 до 20 ежедневно)</p>
+						<p>Адрес главного офиса<br> 
+						и офлайн магазина:<br>
+						<b>ул. Большая Конюшенная
+						19/8, Санкт-Петербург</b></p>			
+						<p>Для заказов по телефону:<br>
+						<b>8 812 450-25-25</b>
+						(с 10 до 20 ежедневно)</p>
 						<a class="btn" href="#">Форма обратной связи</a>
 					</div>
 				</div>
@@ -224,20 +219,18 @@
 						<a class="social-btn social-btn-vk" href="#" title="Вконтакте"></a>
 					</div>
 					<div class="footer-nav">
-						<ul>
+						<ul class="clearfix">
 							<li>
 								<a class="heart" href="#">Для поставщиков</a>
 							</li> 
 							<li>
-								<a href="#">О производстве</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#">Наши документы</a>
+								<a class="heart" href="#">Наши документы</a>
 							</li>
 							<li>
-								<a href="#">Экологические стандарты</a>
+								<a class="heart" href="#">О производстве</a>
+							</li>
+							<li>
+								<a class="heart" href="#">Экологические стандарты</a>
 							</li>
 						</ul>
 					</div>
@@ -248,5 +241,6 @@
 				</div>
 			</footer>
 		</div>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=raiyM26F2clyJIkhZW9uxgWeLUJxfe3k&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
     </body>
 </html>
