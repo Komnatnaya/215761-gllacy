@@ -114,10 +114,10 @@ h4 {
 	line-height: 18px;
 }
 
-li:hover .menu-link {
+.main-navigation li:hover .menu-link {
 	text-decoration: none;
 	color: #323232;
-	background: #ffffff;
+	background: #f7f6f3;
 	border-radius: 15px;
 }
 
@@ -127,7 +127,7 @@ li:hover .menu-link {
 	z-index: 12;
 	top: 37px;
 	left: -6px;
-	background-color: #ffffff;
+	background-color: #f8f7f4;
 	width: 143px;
 	border-radius: 5px;
 	padding: 0;
@@ -236,10 +236,53 @@ li:hover .menu-link {
 .search-block {
 	display: none;
 	position: absolute;
+	top: 38px;
+	right: 0;
+	z-index: 3;
+	width: 342px;
+	height: 84px;
+	background-color: #f8f7f4;
+	border-radius: 7px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.search-block::before {
+	content: "";
+  	position: absolute;
+	top: -5px;
+	width: 100%;
+  	height: 5px;
+}
+
+.search-block input[type=search] {
+	width: 311px;
+	height: 44px;
+	border-radius: 6px;
+	border: 1px solid #d3d3d2;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.search-block input[type=search]:hover {
+	border: 2px solid #c7c6c5;
+}
+
+.search-block input[type=search]:focus {
+	border: 2px solid #8fbdec;
+	outline: none;
 }
 
 .search:hover .search-block {
 	display: block;
+}
+
+.search:hover .search-btn {
+	background-color: #f8f7f4;
+}
+
+.search:hover .search-btn::before {
+	background-position: -177px -64px;
 }
 
 .login-btn {
@@ -265,9 +308,88 @@ li:hover .menu-link {
 	margin-right: 8px;
 }
 
+.login-block form {
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
 .login-block {
 	display: none;
 	position: absolute;
+	top: 38px;
+	right: 0;
+	z-index: 4;
+	width: 277px;
+	height: 214px;
+	background-color: #f8f7f4;
+	text-align: left;
+	border-radius: 7px;
+	padding: 20px;
+}
+
+.login-block::before {
+	content: "";
+  	position: absolute;
+	top: -6px;
+	width: 100%;
+  	height: 6px;
+}
+
+.login-block input[type=email],
+.login-block input[type=password] {
+	width: 240px;
+	height: 44px;
+	border-radius: 6px;
+	border: 1px solid #d3d3d2;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
+
+.login-block input[type=email]:hover,
+.login-block input[type=password]:hover {
+	border: 2px solid #c7c6c5;
+}
+
+.login-block input[type=email]:focus, 
+.login-block input[type=password]:focus {
+	border: 2px solid #8fbdec;
+	outline: none;
+}
+
+.login-block .btn {
+	width: 102px;
+	height: 45px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fefefe;
+	border-radius: 22px;
+	border: none;
+	cursor: pointer;
+}
+
+.login-block .help {
+	float: right;
+	width: 124px;
+	height: 45px;
+}
+
+.login:hover .login-block {
+	display: block;
+}
+
+.login:hover .login-btn {
+	color: #323232;
+	background-color: #f8f7f4;
+}
+
+.login:hover .login-btn::before {
+	background-position: -125px -34px;
+}
+
+.help a {
+	font-size: 13px;
+	line-height: 24px;
+	color: #323232;
 }
 
 .login:hover .login-block {
@@ -298,8 +420,45 @@ li:hover .menu-link {
 
 .user-basket {
 	position: absolute;
-	display: none;
+	top: 38px;
+	right: 0;
+	z-index: 5;
+/*	display: none;*/
+	width: 539px;
+	min-height: 242px;
+	background-color: #f8f7f4;
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+	border-radius: 7px;
+	padding: 20px;
 }
+
+user-basket::before {
+	content: "";
+  	position: absolute;
+	top: -6px;
+	width: 100%;
+  	height: 6px;
+}
+
+.user-basket table {
+	text-align: left;
+}
+
+.user-basket .price {
+	color: #999999;
+}
+
+.user-basket tr:last-child {
+	text-align: right;
+/*	border-top: 1px solid #cacac7;*/
+}
+
+.user-basket a {
+	
+}
+
 
 .contact {
 	float: right;
@@ -775,7 +934,8 @@ li:hover .menu-link {
 }
 
 .sort-block select {
-	background: transparent;
+	border-color: transparent;
+	background-color: transparent;
 	color: #ffffff;
 }
 
@@ -910,18 +1070,18 @@ li:hover .menu-link {
 	border: 2px solid #ffffff;
 }
 
-.additive input.disabled + label::after,
-.additive input.disabled + label::before,
-.fatty input.disabled + label::before {
+.additive input[type=checkbox]:disabled + label::after,
+.additive input[type=checkbox]:disabled + label::before,
+.fatty input[type=radio]:disabled + label::before {
 	border-color: rgba(255, 255, 255, 0.3);
 }
 
-.fatty input.disabled + label::after {
+.fatty input[type=radio]:disabled + label::after {
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
-.fatty input.disabled + label:hover::before,
-.additive input.disabled + label:hover::before {
+.fatty input[type=radio]:disabled + label:hover::before,
+.additive input[type=checkbox]:disabled + label:hover::before {
 	width: 18px;
 	height: 18px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
