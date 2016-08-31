@@ -135,7 +135,7 @@
 					<div class="filter-block">
 						<input type="checkbox" id="addchoko" value="choko" checked>
 						<label for="addchoko">шоколадные</label>
-						<input type="checkbox" id="addsugar" value="sugar" checked>
+						<input class="disabled" type="checkbox" id="addsugar" value="sugar" checked>
 						<label for="addsugar">сахарные присыпки</label>
 						<input type="checkbox" id="addfruit" value="fruit">
 						<label for="addfruit">фрукты</label>
@@ -154,6 +154,7 @@
 						<p>310₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">
 					<div class="product-item-img">
@@ -161,14 +162,15 @@
 						<p>380₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
-				<div class="product-item">	
+				<div class="product-item ice-strawberry">	
 					<div class="product-item-img">
 						<img src="img/ice-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						<p>355₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					<a href="#" class="btn">Быстрый просмотр</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -176,6 +178,7 @@
 						<p>415₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -183,6 +186,7 @@
 						<p>325₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочное с брусничным джемом</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">	
 					<div class="product-item-img">
@@ -190,6 +194,7 @@
 						<p>410₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -197,6 +202,7 @@
 						<p>375₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -204,6 +210,7 @@
 						<p>320₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочное с шоколадной стружкой</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -211,6 +218,7 @@
 						<p>440₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -218,6 +226,7 @@
 						<p>435₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочное с ментоловым сиропом</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -225,6 +234,7 @@
 						<p>355₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочное с кусочками черного шоколада</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 				<div class="product-item">		
 					<div class="product-item-img">
@@ -232,11 +242,12 @@
 						<p>420₽<span>/кг</span></p>
 					</div>
 					<a href="#">Сливочное с мятным сиропом</a>
+					<a href="#" class="btn product-btn">Быстрый просмотр</a>
 				</div>
 			</div>
-			<div class="pages">
-				<a href="#" class="first-page-btn">&lt;</a>
-				<a href="#" class="page-btn">1</a>
+			<div class="paginator">
+				<a href="#" class="first-page-btn disabled">&lt;</a>
+				<a href="#" class="page-btn current">1</a>
 				<a href="#" class="page-btn">2</a>
 				<a href="#" class="page-btn">3</a>
 				<a href="#" class="page-btn">4</a>
@@ -253,17 +264,15 @@
 					<a class="social-btn social-btn-vk" href="#" title="Вконтакте"></a>
         		</div>
 				<div class="footer-nav">
-					<ul>
+					<ul class="clearfix">
 						<li>
-							<a class="heart" href="#">Для поставщиков</a>
+							<a href="#">Для поставщиков</a>
 						</li> 
 						<li>
-          					<a href="#">О производстве</a>
+          					<a href="#">Наши документы</a>
 						</li>
-					</ul>
-					<ul>
 						<li>
-							<a href="#">Наши документы</a>
+							<a href="#">О производстве</a>
 						</li>
 						<li>
 							<a href="#">Экологические стандарты</a>

@@ -377,6 +377,10 @@ li:hover .menu-link {
 	cursor: pointer;
 }
 
+.slider-controls label:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
 #btn-1:checked ~ .site-wrapper #slide1,
 #btn-2:checked ~ .site-wrapper #slide2,
 #btn-3:checked ~ .site-wrapper #slide3 {
@@ -505,6 +509,46 @@ li:hover .menu-link {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
+}
+
+.product-item {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.product-item::before {
+	content: "";
+	width: 293px;
+	height: 405px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+	position: absolute;
+	top: -5px;
+	left: -13px;
+	z-index: -1;
+	display: none;
+}
+
+.product-btn {
+	position: absolute;
+	bottom: -37px;
+	left: 33px;
+	width: 200px;
+	border-radius: 23px;
+	padding: 12px 16px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fefefe;
+	display: none;
+}
+
+.product-item:hover::before,
+.product-item:hover .product-btn {
+	display: block;
+}
+
+.product-item:hover {
+	z-index: 5;
 }
 
 .seo {
@@ -709,16 +753,18 @@ li:hover .menu-link {
 
 .filter {
 	min-height: 157px;
-	width: 879px;
+	width: 1146px;
 	margin-bottom: 40px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
+	font-family: "Roboto", "Arial", sans-serif;
 }
 
 .filter fieldset {
 	display: inline-block;
 	border: none;
+	vertical-align: bottom;
 }
 
 .filter legend {
@@ -728,30 +774,210 @@ li:hover .menu-link {
 	padding-left: 16px;
 }
 
+.sort-block select {
+	background: transparent;
+	color: #ffffff;
+}
+
+.sort-block option {
+	color: #323232;
+}
+
 .filter .filter-block {
-	height: 36px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
-	padding-top: 10px;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding: 7px 16px;
+}
+
+.filter fieldset:nth-child(3) .filter-block, 
+.filter fieldset:nth-child(4) .filter-block {
+	padding: 10px; 
 }
 
 .filter-btn {
-	height: 36px;
+	height: 38px;
 	color: #ffffff;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
 	border: 2px solid #fcfcfc;
 	padding-left: 28px;
 	padding-right: 28px;
+	margin-bottom: 12px;
+	cursor: pointer;
 }
 
-.pages {
+/*
+.filter input[type="sumbit"] {
+	margin-bottom: 0;
+}
+*/
+
+.fatty label {
+	position: relative;
+	padding-left: 38px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.fatty label:last-child {
+	padding-right: 5px;
+}
+
+.fatty input {
+	display: none;
+}
+
+.fatty label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 1px solid #f8f7f4;
+	position: absolute;
+	left: 8px;
+	top: 0;
+}
+
+.fatty label::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #f8f7f4;
+	position: absolute;
+	left: 13px;
+	top: 5px;
+	display: none;
+}
+
+.fatty input[type=radio]:checked + label:after {
+	display: block;
+}
+
+.fatty label:hover::before {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #f8f7f4;
+}
+
+.additive label {
+	position: relative;
+	padding-left: 39px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.additive label:last-child {
+	padding-right: 5px;
+}
+
+.additive input {
+	display: none;
+}
+
+.additive label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	border-radius: 3px;
+	border: 1px solid #ffffff;
+	position: absolute;
+	left: 8px;
+	top: 0;
+}
+
+.additive label::after {
+	content: "";
+	width: 9px;
+	height: 5px;
+	border: 2px solid #ffffff;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+	position: absolute;
+	left: 13px;
+	top: 4px;
+	display: none;
+}
+
+.additive input[type=checkbox]:checked + label:after {
+	display: block;
+}
+
+.additive label:hover::before {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #ffffff;
+}
+
+.additive input.disabled + label::after,
+.additive input.disabled + label::before,
+.fatty input.disabled + label::before {
+	border-color: rgba(255, 255, 255, 0.3);
+}
+
+.fatty input.disabled + label::after {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.fatty input.disabled + label:hover::before,
+.additive input.disabled + label:hover::before {
+	width: 18px;
+	height: 18px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.paginator {
 	float: right;
-	width: 190px;
+	width: 560px;
 	height: 27px;
 	margin-bottom: 35px;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.page-btn {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: transparent;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.page-btn:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-btn:active,
+.paginator .current {
+	background-color: #ffffff;
+	color: #323232;
+}
+
+.first-page-btn,
+.last-page-btn {
+	display: inline-block;
+	width: 20px;
+	height: 28px;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 5px 0;
+	text-align: right;
+}
+
+.first-page-btn {
+	text-align: left;
+}
+
+.paginator .disabled {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .feedback {
