@@ -23,6 +23,10 @@ body > input[type="radio"] {
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
+.wrapper {
+	min-width: 1240px;
+}
+
 .site-wrapper:before,
 .site-wrapper:after {
 	content: "";
@@ -185,6 +189,14 @@ h4 {
 	color: #ffffff;
 	background-color: #d07058;
 	border-radius: 15px;
+}
+
+.btn {
+	display: inline-block;
+	background: #e74b36;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
 }
 
 .user-block {
@@ -406,6 +418,7 @@ h4 {
 .basket-btn::before {
 	content: "";
 	position: absolute;
+	z-index: 5;
 	top: 6px;
 	left: 16px;
 	width: 21px;
@@ -418,20 +431,37 @@ h4 {
 	position: relative;
 }
 
+.basket-btn.full {
+	color: #313131;
+	background-color: #f7f6f3;
+}
+
+.basket-btn.full::before {
+	background-position: -36px -5px;
+}
+ 
+.basket-btn.full::after {
+	content: "";
+	position: absolute;
+	z-index: 4;
+	top: 8px;
+	left: 20px;
+	width: 15px;
+	height: 11px;
+	background-color: #e84d37;
+} 
+
 .user-basket {
 	position: absolute;
 	top: 38px;
 	right: 0;
 	z-index: 5;
-/*	display: none;*/
+	display: none;
 	width: 539px;
 	min-height: 242px;
 	background-color: #f8f7f4;
-	color: #323232;
-	font-size: 13px;
-	line-height: 16px;
 	border-radius: 7px;
-	padding: 20px;
+	padding: 15px;
 }
 
 user-basket::before {
@@ -443,6 +473,10 @@ user-basket::before {
 }
 
 .user-basket table {
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+	border-collapse: collapse;
 	text-align: left;
 }
 
@@ -450,15 +484,55 @@ user-basket::before {
 	color: #999999;
 }
 
-.user-basket tr:last-child {
+.user-basket td {
+	padding: 9px; 10px;
+}
+
+table a {
+	text-decoration: none;
+	color: #323232;
+}
+
+.user-basket .del {
+	cursor: pointer;
+}
+
+.user-basket .name-ice {
+	width: 240px;
+}
+
+.user-basket .total {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: bold;
 	text-align: right;
-/*	border-top: 1px solid #cacac7;*/
+	border-top: 1px solid #cacac7;
+	padding-top: 15px;
 }
 
-.user-basket a {
-	
+.user-basket .btn {
+	width: 170px;
+	height: 45px;
+	border-radius: 23px;
+	text-align: center;
+	padding-top: 11px;
+	text-align: 18px;
+	line-height: 24px;
+	margin-top: 10px;
 }
 
+.user-basket::before {
+	content: "";
+  	position: absolute;
+	top: -6px;
+	left: 0;
+	width: 100%;
+  	height: 6px;
+}
+
+.basket:hover .user-basket {
+	display: block;
+}
 
 .contact {
 	float: right;
@@ -499,14 +573,6 @@ user-basket::before {
 	font-weight: bold;
 	font-size: 60px;
 	line-height: 60px;
-}
-
-.btn {
-	display: inline-block;
-	background: #e74b36;
-	text-decoration: none;
-	color: #ffffff;
-	font-weight: bold;
 }
 
 .description .btn {
@@ -966,12 +1032,6 @@ user-basket::before {
 	cursor: pointer;
 }
 
-/*
-.filter input[type="sumbit"] {
-	margin-bottom: 0;
-}
-*/
-
 .fatty label {
 	position: relative;
 	padding-left: 38px;
@@ -1142,11 +1202,89 @@ user-basket::before {
 
 .feedback {
 	position: absolute;
-	display: none;
+	top: 338px;
+	left: 50%;
+	margin-left: -239px;
+/*	display: none;*/
 	height: 442px;
 	width: 478px;
 	color: #323232;
-	background: #ffffff;
+	background: #f8f7f4;
+	border-radius: 10px;
+	padding: 20px 25px;
+}
+
+.feedback-close {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 0;
+	border: 0;
+	background-color: transparent;
+	outline: 0;
+	cursor: pointer;
+}
+
+.feedback-close::before,
+.feedback-close::after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 21px;
+	height: 2px;
+	background-color: #000000;
+	border-radius: 1px;
+}
+
+.feedback-close::before {
+	transform: rotate(45deg);
+}
+
+.feedback-close::after {
+	transform: rotate(-45deg);
+}
+
+.feedback span {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	
+}
+
+.feedback input[type=text],
+.feedback input[type=email],
+.feedback textarea {
+	border-radius: 6px;
+	border: 1px solid #d3d3d2;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 20px;
+}
+
+.feedback input[type=text],
+.feedback input[type=email] {
+	width: 267px;
+	height: 44px;
+}
+
+.feedback textarea {
+	width: 426px;
+	height: 155px;
+	padding: 11px 15px;
+}
+
+.feedback .btn {
+	float: right;
+	width: 140px;
+	height: 45px;
+	border-radius: 23px;
+	border: none;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 20px;
 }
 
 .main-footer {
