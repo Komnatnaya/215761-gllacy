@@ -25,6 +25,7 @@ body > input[type="radio"] {
 
 .wrapper {
 	min-width: 1240px;
+	background-image: linear-gradient(180deg, #9cb0a5 0%, #849d8f 40%);
 }
 
 .site-wrapper:before,
@@ -73,7 +74,7 @@ h4 {
 	margin: 0 auto;
 	padding-left: 27px;
 	padding-right: 27px;
-	outline: 1px dashed yellow;
+/*	outline: 1px dashed yellow;*/
 }
 
 .clearfix::after {
@@ -116,16 +117,23 @@ h4 {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 18px;
+	border-radius: 15px;
 }
 
 .main-navigation li:hover .menu-link {
 	text-decoration: none;
 	color: #323232;
 	background: #f7f6f3;
-	border-radius: 15px;
 }
 
-.main-navigation .drop-menu {
+.main-navigation li:active .menu-link {
+	text-decoration: none;
+	color: #323232;
+	background: #f7f6f3;
+	box-shadow: inset 0 2px 2px #696969;
+}
+
+.drop-menu {
 	display: none;
 	position: absolute;
 	z-index: 12;
@@ -135,6 +143,7 @@ h4 {
 	width: 143px;
 	border-radius: 5px;
 	padding: 0;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 .menu-catalog:hover .drop-menu {
@@ -164,6 +173,11 @@ h4 {
 	background: #fbded7;
 }
 
+.drop-menu li:active {
+	background: #f6b5a5;
+}
+
+
 .drop-menu-head {
 	font-weight: bold;
 	border-radius: 5px 5px 0 0;
@@ -188,15 +202,30 @@ h4 {
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #d07058;
-	border-radius: 15px;
+}
+
+.main-navigation .active a {
+	color: #ffffff;
 }
 
 .btn {
 	display: inline-block;
-	background: #e74b36;
+/*	background: #e74b36;*/
 	text-decoration: none;
 	color: #ffffff;
 	font-weight: bold;
+	background-image: linear-gradient(#f26843, #e74b36);
+	box-shadow: 0 2px 1px #bd3f18;
+}
+
+.btn:hover {
+	background: #f38367;
+}
+
+.btn:active {
+	color: #fceeec;
+	background-image: linear-gradient(#d74632, #e1613e);
+	box-shadow: inset 0 2px 1px #942718;
 }
 
 .user-block {
@@ -257,6 +286,7 @@ h4 {
 	border-radius: 7px;
 	text-align: center;
 	padding-top: 20px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 .search-block::before {
@@ -336,6 +366,7 @@ h4 {
 	text-align: left;
 	border-radius: 7px;
 	padding: 20px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 .login-block::before {
@@ -462,6 +493,7 @@ h4 {
 	background-color: #f8f7f4;
 	border-radius: 7px;
 	padding: 15px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 user-basket::before {
@@ -579,8 +611,14 @@ table a {
 	font-size: 32px;
 	line-height: 44px;
 	margin: -28px auto;
-	padding: 13px 40px;
+	padding: 12px 40px;
 	border-radius: 35px;
+	box-shadow: 0 2px 3px #bd3f18;
+	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.description .btn:active {
+	box-shadow: inset 0 2px 3px #942718;
 }
 
 .slider-controls {
@@ -736,6 +774,18 @@ table a {
 	line-height: 22px;
 }
 
+.popular-item a:hover,
+.product-item a:hover,
+.popular-item a:active,
+.product-item a:active,
+.html-academy p a:hover,
+.html-academy p a:active,
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+	color: #ffbc9e;
+}
+
+
 .product-item {
 	position: relative;
 	margin-bottom: 20px;
@@ -752,6 +802,7 @@ table a {
 	left: -13px;
 	z-index: -1;
 	display: none;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 .product-btn {
@@ -843,6 +894,11 @@ table a {
 	line-height: 30px;
 	font-weight: bold;
 	color: #323232;
+}
+
+.blog a:hover,
+.blog a:active {
+	color: #e84d37;
 }
 
 .sub {
@@ -948,11 +1004,13 @@ table a {
 .breadcrumbs-block {
 	min-height: 20px;
 	width: 267px;
+	margin-bottom: 5px;
 }
 
 .breadcrumbs {
     margin-top: -20px; 
 	padding: 0;
+	margin-bottom: 0;
 }
    
 .breadcrumbs li {
@@ -1003,6 +1061,7 @@ table a {
 	border-color: transparent;
 	background-color: transparent;
 	color: #ffffff;
+	outline: none;
 }
 
 .sort-block option {
@@ -1020,16 +1079,42 @@ table a {
 	padding: 10px; 
 }
 
+fieldset:first-child:hover .filter-block{
+	background-color: #ffffff;
+}
+
+fieldset:first-child:hover select {
+	color: #323232;
+}
+
 .filter-btn {
 	height: 38px;
+	width: 144px;
 	color: #ffffff;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
 	border: 2px solid #fcfcfc;
+/*
 	padding-left: 28px;
 	padding-right: 28px;
+*/
 	margin-bottom: 12px;
 	cursor: pointer;
+	outline: none;
+}
+
+.filter-btn:hover {
+	color: #323232;
+	background-color: #fbfcfb;
+	border: none;
+	
+}
+
+.filter-btn:active {
+	color: #323232;
+	background-color: #eaeaea;
+	box-shadow: inset 0 2px 1px #6c6d6c;
+	border: none;
 }
 
 .fatty label {
@@ -1185,11 +1270,12 @@ table a {
 .last-page-btn {
 	display: inline-block;
 	width: 20px;
-	height: 28px;
+	height: 30px;
 	text-decoration: none;
 	color: #ffffff;
 	padding: 5px 0;
 	text-align: right;
+	font-size: 20px;
 }
 
 .first-page-btn {
@@ -1205,7 +1291,7 @@ table a {
 	top: 338px;
 	left: 50%;
 	margin-left: -239px;
-/*	display: none;*/
+	display: none;
 	height: 442px;
 	width: 478px;
 	color: #323232;
@@ -1323,6 +1409,11 @@ table a {
 
 .social-btn-vk {
 	background-position: -50px -152px;
+}
+
+.social-btn:hover {
+	border: 4px solid rgba(255, 255, 255, 0.6);
+	background-color: #ffffff;
 }
 
 .footer-nav {
