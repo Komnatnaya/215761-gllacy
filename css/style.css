@@ -724,16 +724,17 @@ table a {
 	line-height: 24px;
 }
 
+/*
 .popular {
 	margin-bottom: 20px;
 }
+*/
 
 .product {
 	min-height: 1100px;
 	margin-bottom: 30px;
 }
 
-.popular-item,
 .product-item  {
 	float: left;
 	position: relative;
@@ -741,30 +742,38 @@ table a {
 	min-height: 342px;
 	width: 267px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
+/*
+.product-item {
+	position: relative;
+	margin-bottom: 20px;
+}
+*/
+
+/*
 .popular-item:last-child {
 	margin-right: 0;
 }
+*/
 
 .product-item:nth-child(4n) {
 	margin-right: 0;
 }
 
-.popular-item-img,
 .product-item-img {
 	position: relative;
 	margin-bottom: 8px;
 }
 
-.popular-item-img .hit {
+.product-item-img .hit {
 	position: absolute;
 	top: 0;
 	left: 0;
 	border-radius: 50%;
 }
 
-.popular-item-img p,
 .product-item-img p {
 	position: absolute;
 	top: 163px;
@@ -773,12 +782,10 @@ table a {
 	line-height: 45px;
 }
 
-.popular-item-img span,
 .product-item-img span {
 	font-size: 30px;
 }
 
-.popular-item a,
 .product-item a {
 	color: #ffffff;
 	font-weight: 500;
@@ -786,9 +793,7 @@ table a {
 	line-height: 22px;
 }
 
-.popular-item a:hover,
 .product-item a:hover,
-.popular-item a:active,
 .product-item a:active,
 .html-academy p a:hover,
 .html-academy p a:active,
@@ -797,22 +802,14 @@ table a {
 	color: #ffbc9e;
 }
 
-.popular-item a.btn:hover,
 .product-item a.btn:hover {
 	color: #fefefe;
 }
 
-.popular-item a.btn:active,
 .product-item a.btn:active {
 	color: #fceeec;
 }
 
-.product-item {
-/*	position: relative;*/
-	margin-bottom: 20px;
-}
-
-.popular-item::before,
 .product-item::before {
 	content: "";
 	width: 293px;
@@ -840,14 +837,11 @@ table a {
 	display: none;
 }
 
-.popular-item:hover::before,
 .product-item:hover::before,
-.popular-item:hover .product-btn,
 .product-item:hover .product-btn {
 	display: block;
 }
 
-.popular-item:hover,
 .product-item:hover {
 	z-index: 5;
 }
