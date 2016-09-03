@@ -223,6 +223,7 @@ input[type=submit] {
 }
 
 .btn:hover {
+	color: #fefefe;
 	background: #f38367;
 }
 
@@ -311,11 +312,12 @@ input[type=submit] {
 }
 
 .search-block input[type=search]:hover {
-	border: 2px solid #c7c6c5;
+	box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 .search-block input[type=search]:focus {
-	border: 2px solid #8fbdec;
+	box-shadow: inset 0 0 0 1px #8fbdec;
+	border-color: #8fbdec;
 	outline: none;
 }
 
@@ -394,12 +396,13 @@ input[type=submit] {
 
 .login-block input[type=email]:hover,
 .login-block input[type=password]:hover {
-	border: 2px solid #c7c6c5;
+	box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 .login-block input[type=email]:focus, 
 .login-block input[type=password]:focus {
-	border: 2px solid #8fbdec;
+	box-shadow: inset 0 0 0 1px #8fbdec;
+	border-color: #8fbdec;
 	outline: none;
 }
 
@@ -438,6 +441,12 @@ input[type=submit] {
 	line-height: 24px;
 	color: #323232;
 }
+
+.help a:hover,
+.help a:active {
+	color: #e84d37;
+}
+
 
 .login:hover .login-block {
 	display: block;
@@ -688,7 +697,6 @@ table a {
 	border-radius: 15px;
 	padding-left: 20px;
 	padding-right: 20px;
-	text-align: right;
 }
 
 .discount-item:last-child {
@@ -699,18 +707,17 @@ table a {
 .discount-item h2 {
 	margin-top: 15px;
 	margin-bottom: 9px;
-	text-align: left;
 }
 
 .discount-item p {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 22px;
-	text-align: left;
 	margin-bottom: 44px;
 }
 
 .discount-item .btn {
+	float: right;
 	border-radius: 23px;
 	padding: 12px 22px;
 	font-size: 18px;
@@ -729,6 +736,7 @@ table a {
 .popular-item,
 .product-item  {
 	float: left;
+	position: relative;
 	margin-right: 26px;
 	min-height: 342px;
 	width: 267px;
@@ -789,12 +797,22 @@ table a {
 	color: #ffbc9e;
 }
 
+.popular-item a.btn:hover,
+.product-item a.btn:hover {
+	color: #fefefe;
+}
+
+.popular-item a.btn:active,
+.product-item a.btn:active {
+	color: #fceeec;
+}
 
 .product-item {
-	position: relative;
+/*	position: relative;*/
 	margin-bottom: 20px;
 }
 
+.popular-item::before,
 .product-item::before {
 	content: "";
 	width: 293px;
@@ -822,11 +840,14 @@ table a {
 	display: none;
 }
 
+.popular-item:hover::before,
 .product-item:hover::before,
+.popular-item:hover .product-btn,
 .product-item:hover .product-btn {
 	display: block;
 }
 
+.popular-item:hover,
 .product-item:hover {
 	z-index: 5;
 }
@@ -949,11 +970,12 @@ table a {
 }
 
 .sub input[type=email]:hover {
-	border: 2px solid #c7c6c5;
+	box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 .sub input[type=email]:focus{
-	border: 2px solid #8fbdec;
+	box-shadow: inset 0 0 0 1px #8fbdec;
+	border-color: #8fbdec;
 }
 
 .sub .btn {
@@ -1310,13 +1332,14 @@ fieldset:first-child:hover select {
 .feedback input[type=text]:hover,
 .feedback input[type=email]:hover,
 .feedback textarea:hover {
-	border: 2px solid #c7c6c5;
+	box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 .feedback input[type=text]:focus,
 .feedback input[type=email]:focus,
 .feedback textarea:focus {
-	border: 2px solid #8fbdec;
+	box-shadow: inset 0 0 0 1px #8fbdec;
+	border-color: #8fbdec;
 	outline: none;
 }
 
