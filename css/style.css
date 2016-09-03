@@ -212,6 +212,10 @@ input[type=submit] {
 	color: #ffffff;
 }
 
+.drop-menu .active:hover a {
+	color: #323232;
+}
+
 .btn {
 	display: inline-block;
 /*	background: #e74b36;*/
@@ -298,6 +302,7 @@ input[type=submit] {
 	content: "";
   	position: absolute;
 	top: -5px;
+	right: 0;
 	width: 100%;
   	height: 5px;
 }
@@ -379,6 +384,7 @@ input[type=submit] {
 	content: "";
   	position: absolute;
 	top: -6px;
+	right: 0;
 	width: 100%;
   	height: 6px;
 }
@@ -724,12 +730,6 @@ table a {
 	line-height: 24px;
 }
 
-/*
-.popular {
-	margin-bottom: 20px;
-}
-*/
-
 .product {
 	min-height: 1100px;
 	margin-bottom: 30px;
@@ -744,19 +744,6 @@ table a {
 	text-align: center;
 	margin-bottom: 20px;
 }
-
-/*
-.product-item {
-	position: relative;
-	margin-bottom: 20px;
-}
-*/
-
-/*
-.popular-item:last-child {
-	margin-right: 0;
-}
-*/
 
 .product-item:nth-child(4n) {
 	margin-right: 0;
@@ -847,7 +834,6 @@ table a {
 }
 
 .seo {
-	min-height: 306px;
 	margin-bottom: 40px;
 	color: #323232;
 	padding: 23px 20px;
@@ -1076,6 +1062,7 @@ table a {
 	display: inline-block;
 	border: none;
 	vertical-align: bottom;
+	padding-left: 0;
 }
 
 .filter legend {
@@ -1083,6 +1070,16 @@ table a {
 	line-height: 16px;
 	font-weight: 500;
 	padding-left: 16px;
+}
+
+.filter .filter-block {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.sort-block .filter-block {
+	padding: 6px 13px 8px 13px;
 }
 
 .sort-block select {
@@ -1096,17 +1093,6 @@ table a {
 	color: #323232;
 }
 
-.filter .filter-block {
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 18px;
-	padding: 7px 16px;
-}
-
-.filter fieldset:nth-child(3) .filter-block, 
-.filter fieldset:nth-child(4) .filter-block {
-	padding: 10px; 
-}
-
 fieldset:first-child:hover .filter-block{
 	background-color: #ffffff;
 }
@@ -1115,6 +1101,41 @@ fieldset:first-child:hover select {
 	color: #323232;
 }
 
+.price-block .filter-block {
+	position: relative;
+	width: 220px;
+	padding: 17px 15px;
+}
+
+.price-block .scale {
+	height: 4px;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.price-block .bar {
+	width: 100px;
+	height: 4px;
+	background: #ffffff;
+	margin-left: 29px;
+}
+
+.range-toggle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ffffff;
+	cursor: pointer;
+	position: absolute;
+	top: 8px;
+}
+
+.range-toggle-min {
+	left: 34px;
+}
+
+.range-toggle-max {
+	left: 132px;
+}
 .filter-btn {
 	height: 38px;
 	width: 144px;
@@ -1123,6 +1144,7 @@ fieldset:first-child:hover select {
 	border-radius: 18px;
 	border: 2px solid #fcfcfc;
 	margin-bottom: 12px;
+	margin-left: 4px;
 	cursor: pointer;
 }
 
@@ -1143,7 +1165,7 @@ fieldset:first-child:hover select {
 .fatty label {
 	position: relative;
 	padding-left: 38px;
-	padding-right: 10px;
+	padding-right: 8px;
 	cursor: pointer;
 }
 
@@ -1427,9 +1449,10 @@ fieldset:first-child:hover select {
 	width: 36px;
 	height: 36px;
 	border-radius: 100%;
-	border: 4px solid rgba(255, 255, 255, 0.4);
+	border: 4px solid #c2cec7;
 	background: url("../img/spritesheet.png") no-repeat;
 	margin-right: 9px;
+	opacity: 0.8;
 }
 
 .social-btn-twit {
@@ -1448,12 +1471,15 @@ fieldset:first-child:hover select {
 	background-position: -50px -152px;
 }
 
-/*
 .social-btn:hover {
-	border: 4px solid rgba(255, 255, 255, 0.6);
-	background-color: #ffffff;
+	border-color: #dbe3de;
+	opacity: 1;
 }
-*/
+
+.social-btn:active {
+	border-color: #dbe3de;
+	box-shadow: inset 0 1px 1px #989998;
+}
 
 .footer-nav {
 	float: left;

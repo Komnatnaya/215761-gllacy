@@ -66,14 +66,14 @@
 									<tr>
 										<td class="del"><img src="img/x-mini.png" width="11" height="11" alt="Удалить"></td>
 										<td><img src="img/ice-orange-mini.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-										<td class="name-ice"><a href="">Пломбир с апельсиновым джемом</a></td>
+										<td class="name-ice"><a href="#">Пломбир с апельсиновым джемом</a></td>
 										<td>1,5 кг х <span class="price">200 руб.</span></td>
 										<td>300 руб.</td>
 									</tr>
 									<tr>
 										<td class="del"><img src="img/x-mini.png" width="11" height="11" alt="Удалить"></td>
 										<td><img src="img/ice-strawberry-mini.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-										<td class="name-ice"><a href="">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+										<td class="name-ice"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
 										<td>1,5 кг х <span class="price">300 руб.</span></td>
 										<td>450 руб.</td>
 									</tr>
@@ -115,7 +115,11 @@
 					<fieldset class="price-block">
 						<legend>Цена: 100 руб. - 500 руб.</legend>
 						<div class="filter-block">
-							<input type="range" name="price" id="min-max-price" min="0" max="800" step="100" value="500">
+							<div class="scale">
+								<div class="bar"></div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+							</div>
 						</div>
 					</fieldset>
 					<fieldset class="fatty">
