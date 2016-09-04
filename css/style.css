@@ -68,6 +68,65 @@ input[type=submit] {
 	outline: none;
 }
 
+input[type=text],
+input[type=email],
+input[type=search],
+input[type=password] {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #323232;
+}
+
+textarea {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #323232;
+}
+
+input::-webkit-input-placeholder {
+	font-weight: normal;
+	color: #999999;
+} 
+
+input::-moz-placeholder {
+	font-weight: normal;
+	color: #999999;
+} 
+
+input:-moz-placeholder {
+	font-weight: normal;
+	color: #999999;
+} 
+
+input:-ms-input-placeholder {
+	font-weight: normal;
+	color: #999999;
+}
+
+textarea::-webkit-input-placeholder {
+	font-weight: normal;
+	color: #999999;
+} 
+
+textarea::-moz-placeholder {
+	font-weight: normal;
+	color: #999999;
+} 
+
+textarea:-moz-placeholder {
+	font-weight: normal;
+	color: #999999;
+} 
+
+textarea:-ms-input-placeholder {
+	font-weight: normal;
+	color: #999999;
+}
+
+/*Шапка*/
+
 .main-header {
 	min-height: 118px;
 	margin-bottom: 20px;
@@ -78,7 +137,6 @@ input[type=submit] {
 	margin: 0 auto;
 	padding-left: 27px;
 	padding-right: 27px;
-/*	outline: 1px dashed yellow;*/
 }
 
 .clearfix::after {
@@ -93,14 +151,14 @@ input[type=submit] {
 	width: 160px;
 	margin-left: -5px;
 	margin-right: 10px;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 .main-navigation {
 	float: left;
 	min-height: 73px;
 	width: 406px;
-	padding-top: 20px;
+	padding-top: 22px;
 }
 
 .main-navigation ul {
@@ -117,7 +175,7 @@ input[type=submit] {
 .menu-link {
 	display: block;
 	color: #ffffff;
-	padding: 7px 14px;
+	padding: 7px 13px;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 18px;
@@ -218,7 +276,6 @@ input[type=submit] {
 
 .btn {
 	display: inline-block;
-/*	background: #e74b36;*/
 	text-decoration: none;
 	color: #ffffff;
 	font-weight: bold;
@@ -241,7 +298,7 @@ input[type=submit] {
 	float: right;
 	min-height: 73px;
 	width: 560px;
-	padding-top: 26px;
+	padding-top: 22px;
 	text-align: right;
 } 
 
@@ -275,7 +332,7 @@ input[type=submit] {
 	width: 17px;
     height: 17px;
 	background: url("../img/spritesheet.png") no-repeat;
-	background-position: -150px -64px;
+	background-position:  -72px -77px;
 }
 
 .search {
@@ -335,7 +392,7 @@ input[type=submit] {
 }
 
 .search:hover .search-btn::before {
-	background-position: -177px -64px;
+	background-position: -105px -5px;
 }
 
 .login-btn {
@@ -353,7 +410,7 @@ input[type=submit] {
 	width: 21px;
     height: 19px;
 	background: url("../img/spritesheet.png") no-repeat;
-	background-position: -125px -5px;
+	background-position: -5px -35px;
 }
 
 .login {
@@ -439,7 +496,7 @@ input[type=submit] {
 }
 
 .login:hover .login-btn::before {
-	background-position: -125px -34px;
+	background-position: -36px -35px;
 }
 
 .help a {
@@ -474,7 +531,7 @@ input[type=submit] {
 	width: 21px;
     height: 20px;
 	background: url("../img/spritesheet.png") no-repeat;
-	background-position: -5px -5px;
+	background-position: -43px -5px;
 }
 
 .basket {
@@ -487,7 +544,7 @@ input[type=submit] {
 }
 
 .basket-btn.full::before {
-	background-position: -36px -5px;
+	background-position: -74px -5px;
 }
  
 .basket-btn.full::after {
@@ -536,12 +593,17 @@ user-basket::before {
 }
 
 .user-basket td {
-	padding: 9px; 10px;
+	padding: 9px 10px;
 }
 
 table a {
 	text-decoration: none;
 	color: #323232;
+}
+
+table a:hover,
+table a:active {
+	color: #e84d37;
 }
 
 .user-basket .del {
@@ -603,6 +665,9 @@ table a {
 	line-height: 24px;
 }
 
+/*Конец шапки*/
+/*Слайдер*/
+
 .slider {
   position: relative;
 }
@@ -630,7 +695,7 @@ table a {
 	font-size: 32px;
 	line-height: 44px;
 	margin: -28px auto;
-	padding: 12px 40px;
+	padding: 10px 40px;
 	border-radius: 35px;
 	box-shadow: 0 2px 3px #bd3f18;
 	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
@@ -649,8 +714,8 @@ table a {
 
 .slider-controls label {
  	display: inline-block;
-	width: 17px;
- 	height: 17px;
+	width: 18px;
+ 	height: 18px;
  	margin-right: 8px;
 	vertical-align: top;
 	background-color: transparent;
@@ -690,6 +755,8 @@ table a {
  	background-color: #ffffff;
 }
 
+/*Конец слайдера*/
+
 .discount {
 	margin-bottom: 40px;
 }
@@ -712,27 +779,27 @@ table a {
 
 .discount-item h2 {
 	margin-top: 15px;
-	margin-bottom: 9px;
+	margin-bottom: 6px;
 }
 
 .discount-item p {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 22px;
-	margin-bottom: 44px;
+	margin-bottom: 42px;
 }
 
 .discount-item .btn {
 	float: right;
 	border-radius: 23px;
-	padding: 12px 22px;
+	padding: 11px 23px;
 	font-size: 18px;
 	line-height: 24px;
 }
 
 .product {
 	min-height: 1100px;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 
 .product-item  {
@@ -767,34 +834,27 @@ table a {
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 45px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .product-item-img span {
 	font-size: 30px;
 }
 
-.product-item a {
+.product-item .info {
 	color: #ffffff;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
 }
 
-.product-item a:hover,
-.product-item a:active,
+.product-item .info:hover,
+.product-item .info:active,
 .html-academy p a:hover,
 .html-academy p a:active,
 .breadcrumbs a:hover,
 .breadcrumbs a:active {
 	color: #ffbc9e;
-}
-
-.product-item a.btn:hover {
-	color: #fefefe;
-}
-
-.product-item a.btn:active {
-	color: #fceeec;
 }
 
 .product-item::before {
@@ -827,6 +887,10 @@ table a {
 .product-item:hover::before,
 .product-item:hover .product-btn {
 	display: block;
+}
+
+.product-item:hover .info {
+	text-decoration: none;
 }
 
 .product-item:hover {
@@ -883,7 +947,7 @@ table a {
 	margin-right: 26px;
 	min-height: 220px;
 	width: 560px;
-	padding: 24px 250px 20px 20px;
+	padding: 22px 250px 20px 20px;
 	background: #ffffff url("../img/fon-strawberry.jpg") no-repeat;
 	border-radius: 14px;
 }
@@ -891,7 +955,7 @@ table a {
 .blog h4 {
 	font-weight: 500;
 	margin-top: 0;
-	margin-bottom: 7px;
+	margin-bottom: 4px;
 }
 
 .blog a {
@@ -934,12 +998,13 @@ table a {
 	font-size: 16px;
 	line-height: 22px;
 	color: #5a5a5a;
-	margin-bottom: 37px;
+	margin-top: 16px;
+	margin-bottom: 35px;
 	text-align: left;
 }
 
 .sub input[type=email] {
-	width: 364px;
+	width: 366px;
 	height: 44px;
 	margin-right: 10px;
 	border-radius: 4px;
@@ -961,7 +1026,7 @@ table a {
 .sub .btn {
 	font-size: 18px;
 	line-height: 24px;
-	padding: 12px 20px;
+	padding: 10px 18px;
 	border-radius: 35px;
 	border: none;
 	cursor: pointer;
@@ -969,34 +1034,38 @@ table a {
 
 .map-contacts {
 	position: relative;
-	width: 1200px;
+	width: 100%;
 	min-height: 430px;
 	margin: 0 auto;
+	background: #f7f1d9 url("../img/map.jpg") no-repeat top center;
 }
 
 .yandex-map {
-	width: 1200px;
-	height: 430px;
-	background: url("../img/map.jpg") no-repeat top center;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
 }
 
 .contact-us {
 	float: right;
-	position: absolute;
-	top: 62px;
-	right: 27px;
+	position: relative;
+	z-index: 3;
 	color: #323232;
 	background: #ffffff;
 	width: 302px;
-	height: 306px;
+	height: 304px;
 	border-radius: 13px;
 	padding: 15px 25px;
+	margin-top: 62px;
 }
 
 .contact-us p {
 	font-size: 14px;
 	line-height: 20px;
-	margin-bottom: 22px;
+	margin-bottom: 18px;
 }
 
 .contact-us b{
@@ -1009,11 +1078,14 @@ table a {
 .contact-us .btn {
 	width: 253px;
 	border-radius: 23px;
-	padding: 11px 20px;
+	padding: 10px 20px;
 	font-size: 18px;
 	line-height: 24px;
 	text-align: center;
+	margin-top: 5px;
 }
+
+/*Конец основного содержимого главной страницы, всплывающая форма ниже*/
 
 .breadcrumbs-block {
 	min-height: 20px;
@@ -1022,7 +1094,8 @@ table a {
 }
 
 .breadcrumbs {
-    margin-top: -20px; 
+    margin-top: -22px; 
+	margin-left: -9px;
 	padding: 0;
 	margin-bottom: 0;
 }
@@ -1048,10 +1121,12 @@ table a {
 	color: #ffffff;
 }
 
+/*Фильтр*/
+
 .filter {
 	min-height: 157px;
 	width: 1146px;
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1061,8 +1136,10 @@ table a {
 .filter fieldset {
 	display: inline-block;
 	border: none;
-	vertical-align: bottom;
+	vertical-align: top;
 	padding-left: 0;
+	padding-bottom: 16px;
+	margin-left: 0;
 }
 
 .filter legend {
@@ -1075,11 +1152,11 @@ table a {
 .filter .filter-block {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
-	padding: 10px;
+	padding: 9px 10px 9px 8px;
 }
 
 .sort-block .filter-block {
-	padding: 6px 13px 8px 13px;
+	padding: 5px 12px 7px 12px;
 }
 
 .sort-block select {
@@ -1104,7 +1181,7 @@ fieldset:first-child:hover select {
 .price-block .filter-block {
 	position: relative;
 	width: 220px;
-	padding: 17px 15px;
+	padding: 16px 15px;
 }
 
 .price-block .scale {
@@ -1137,14 +1214,15 @@ fieldset:first-child:hover select {
 	left: 132px;
 }
 .filter-btn {
-	height: 38px;
+	display: inline-block;
+	height: 36px;
 	width: 144px;
 	color: #ffffff;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
 	border: 2px solid #fcfcfc;
-	margin-bottom: 12px;
-	margin-left: 4px;
+	margin-top: 22px;
+/*	margin-left: 4px;*/
 	cursor: pointer;
 }
 
@@ -1164,7 +1242,7 @@ fieldset:first-child:hover select {
 
 .fatty label {
 	position: relative;
-	padding-left: 38px;
+	padding-left: 37px;
 	padding-right: 8px;
 	cursor: pointer;
 }
@@ -1218,7 +1296,7 @@ fieldset:first-child:hover select {
 }
 
 .additive label:last-child {
-	padding-right: 5px;
+	padding-right: 8px;
 }
 
 .additive input {
@@ -1277,19 +1355,19 @@ fieldset:first-child:hover select {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/*Пагинатор*/
+
 .paginator {
-	float: right;
-	width: 560px;
-	height: 27px;
-	margin-bottom: 35px;
-	vertical-align: middle;
+	width: 1146px;
+	height: 58px;
 	text-align: right;
+	border-bottom: 1px solid #a9bbb1;
 }
 
 .page-btn {
 	display: inline-block;
-	width: 28px;
-	height: 28px;
+	width: 26px;
+	height: 26px;
 	border-radius: 50%;
 	background-color: transparent;
 	text-decoration: none;
@@ -1299,9 +1377,34 @@ fieldset:first-child:hover select {
 	font-weight: 500;
 	padding: 5px 0;
 	text-align: center;
+	margin-right: -2px;
 }
 
-.page-btn:hover {
+.first-page-btn,
+.last-page-btn {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	padding: 5px 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	line-height: 18px;
+	color: transparent;
+	background: url("../img/spritesheet.png") no-repeat;
+}
+
+.first-page-btn {
+	background-position: -16px 1px;
+}
+
+.last-page-btn {
+	background-position: 6px 1px;
+}
+
+.page-btn:hover,
+.last-page-btn:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1311,32 +1414,53 @@ fieldset:first-child:hover select {
 	color: #323232;
 }
 
-.first-page-btn,
-.last-page-btn {
-	display: inline-block;
-	width: 20px;
-	height: 30px;
-	text-decoration: none;
-	color: #ffffff;
-	padding: 5px 0;
-	text-align: right;
-	font-size: 20px;
+.last-page-btn:active {
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
-.first-page-btn {
-	text-align: left;
+/*Всплывающая форма*/
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.paginator .disabled {
-	color: rgba(255, 255, 255, 0.3);
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.feedback-block {
+	width: 1146px;
+	height: 560px;
+	border-bottom: 1px solid #a9bbb1;
 }
 
 .feedback {
-	position: absolute;
-	top: 338px;
+	position: fixed;
+	top: 50%;
 	left: 50%;
+	z-index: 30;
+	margin-top: -221px;
 	margin-left: -239px;
-/*	display: none;*/
+	display: none;
 	height: 442px;
 	width: 478px;
 	color: #323232;
@@ -1357,6 +1481,15 @@ fieldset:first-child:hover select {
 	box-shadow: inset 0 0 0 1px #8fbdec;
 	border-color: #8fbdec;
 	outline: none;
+}
+
+.feedback-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.feedback-error {
+	animation: shake 0.6s;
 }
 
 .feedback-close {
@@ -1396,7 +1529,6 @@ fieldset:first-child:hover select {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 500;
-	
 }
 
 .feedback input[type=text],
@@ -1430,7 +1562,25 @@ fieldset:first-child:hover select {
 	font-size: 18px;
 	line-height: 24px;
 	margin-top: 20px;
+	cursor: pointer;
 }
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 25;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.overlay-show {
+	display: block;
+}
+
+/*Подвал*/
 
 .main-footer {
 	min-height: 103px;
@@ -1446,33 +1596,33 @@ fieldset:first-child:hover select {
 
 .social-btn {
 	display: inline-block;
-	width: 36px;
-	height: 36px;
+	width: 38px;
+	height: 38px;
 	border-radius: 100%;
-	border: 4px solid #c2cec7;
+	border: 4px solid rgba(255, 255, 255, 0.3);
 	background: url("../img/spritesheet.png") no-repeat;
-	margin-right: 9px;
+	margin-right: 7px;
 	opacity: 0.8;
 }
 
 .social-btn-twit {
-	background-position: -7px -152px;
+	background-position: -100px -78px;
 }
 
 .social-btn-inst {
-	background-position: -49px -88px;
+	background-position: -31px -78px;
 }
 
 .social-btn-fb {
-	background-position: -7px -65px;
+	background-position: -68px -36px;
 }
 
 .social-btn-vk {
-	background-position: -50px -152px;
+	background-position: -133px -6px;
 }
 
 .social-btn:hover {
-	border-color: #dbe3de;
+	border-color: rgba(255, 255, 255, 0.5);
 	opacity: 1;
 }
 
@@ -1491,7 +1641,7 @@ fieldset:first-child:hover select {
 
 .footer-nav ul {
 	padding: 0;
-	margin-top: 15px;
+	margin-top: 12px;
 }
 
 .footer-nav li {
@@ -1517,7 +1667,7 @@ fieldset:first-child:hover select {
 	width: 15px;
   	height: 13px;
 	background: url("../img/spritesheet.png") no-repeat;
-	background-position: -125px -63px;
+	background-position: -5px -77px;
 }
 
 .footer-nav a:hover {
@@ -1536,11 +1686,12 @@ fieldset:first-child:hover select {
 
 .html-academy > a {
 	position: relative;
+	top: 0;
 	left: 78px;
 }
 
 .html-academy p {
-	margin-top: 2px;
+	margin-top: 0;
 	font-size: 12px;
 	line-height: 18px;
 	text-align: right;

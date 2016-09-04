@@ -44,7 +44,7 @@
 							<a class="user-block-btn search-btn" href="#">Поиск</a>
 							<div class="search-block">
 								<form action="#" method="get">
-									<input type="search" name="search" placeholder="Что ищем?">
+									<input type="search" name="search" placeholder="Что ищем?" required>
 								</form>
 							</div>
 						</div>
@@ -52,8 +52,8 @@
 							<a class="user-block-btn login-btn" href="#">Вход</a>
 							<div class="login-block">
 								<form action="#" method="post">
-									<input type="email" name="login" placeholder="Электронная почта">
-									<input type="password" name="password" placeholder="Пароль">
+									<input type="email" name="login" placeholder="Электронная почта" required>
+									<input type="password" name="password" placeholder="Пароль" required>
 									<input type="submit" value="Войти" class="btn">
 									<div class="help">
 										<a href="#">Забыли пароль?</a>
@@ -101,12 +101,12 @@
 				<div class="discount clearfix">
 					<div class="discount-item">
 						<h2>Малинка даром!</h2>
-						<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+						<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 						<a class="btn" href="#">Хочу варенье!</a>
 					</div>
 					<div class="discount-item">
 						<h2>Шоколадки даром!</h2>
-						<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 						<a class="btn" href="#">Хочу шоколадки!</a>
 					</div>
 				</div>
@@ -117,7 +117,7 @@
 							<img src="img/ice-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 							<p>310₽<span>/кг</span></p>
 						</div>
-						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<a href="#" class="info">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						<a href="#" class="btn product-btn">Быстрый просмотр</a>
 					</div>
 					<div class="product-item">
@@ -126,7 +126,7 @@
 							<img src="img/ice-coffe.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 							<p>380₽<span>/кг</span></p>
 						</div>
-						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<a href="#" class="info">Сливочно-кофейное с кусочками шоколада</a>
 						<a href="#" class="btn product-btn">Быстрый просмотр</a>
 					</div>
 					<div class="product-item">
@@ -135,7 +135,7 @@
 							<img src="img/ice-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 							<p>355₽<span>/кг</span></p>
 						</div>
-						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<a href="#" class="info">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						<a href="#" class="btn product-btn">Быстрый просмотр</a>
 					</div>
 					<div class="product-item">
@@ -144,7 +144,7 @@
 							<img src="img/ice-brulee.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 							<p>415₽<span>/кг</span></p>
 						</div>
-						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<a href="#" class="info">Сливочное крем-брюле с карамельной подливкой</a>
 						<a href="#" class="btn product-btn">Быстрый просмотр</a>
 					</div>
 				</div>
@@ -175,7 +175,7 @@
 					<div class="sub">
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 						<form action="#" method="post">
-							<input type="email" name="email" placeholder="Электронная почта">
+							<input type="email" name="email" placeholder="Электронная почта" required>
 							<input type="submit" name="email-submit" class="btn" value="Отправить">
 						</form>
 					</div>
@@ -185,14 +185,14 @@
 				<div id="yandex-map" class="yandex-map"></div>
 				<div class="container clearfix">
 					<div class="contact-us">
-						<p>Адрес главного офиса<br> 
-						и офлайн магазина:<br>
+						<p>Адрес главного офиса и<br> 
+						офлайн магазина:<br>
 						<b>ул. Большая Конюшенная
 						19/8, Санкт-Петербург</b></p>			
 						<p>Для заказов по телефону:<br>
 						<b>8 812 450-25-25</b>
 						(с 10 до 20 ежедневно)</p>
-						<a class="btn" href="#">Форма обратной связи</a>
+						<a class="btn open-feedback" href="feedback.html">Форма обратной связи</a>
 					</div>
 				</div>
 			</div>
@@ -206,6 +206,7 @@
 					<input type="submit" value="Отправить" class="btn">
 				</form>
 			</div>
+			<div class="overlay"></div>
 			<footer class="main-footer">
 				<div class="container clearfix">
 					<div class="footer-social">
@@ -237,6 +238,7 @@
 				</div>
 			</footer>
 		</div>
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=raiyM26F2clyJIkhZW9uxgWeLUJxfe3k&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
-    </body>
+		<script src="js/popup.js"></script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=hN0USMIPSgLH8BodhTb9eum4l2gDH-Xz&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
+	</body>
 </html>
