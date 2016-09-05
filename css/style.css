@@ -15,7 +15,7 @@ body > input[type="radio"] {
 }
 
 .site-wrapper {
-	min-width: 1240px;
+	min-width: 1200px;
 	background-color: #849d8f;
 	background-image: url("../img/slide-1.png");
 	background-repeat: no-repeat;
@@ -408,6 +408,18 @@ input[type=search]:focus::-webkit-input-placeholder {
 	color: transparent;
 }
 
+input[type=search]:focus::-moz-placeholder {
+	color: transparent;
+} 
+
+input[type=search]:focus:-moz-placeholder {
+	color: transparent;
+} 
+
+input[type=search]:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
 input[type=search]:focus + label {
 	display: block;
 	color: #5b9ddf;
@@ -516,6 +528,21 @@ input[type=search]:valid + label {
 
 .login-block input[type=email]:focus::-webkit-input-placeholder,
 .login-block input[type=password]:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.login-block input[type=email]:focus::-moz-placeholder,
+.login-block input[type=password]:focus::-moz-placeholder {
+	color: transparent;
+} 
+
+.login-block input[type=email]:focus:-moz-placeholder,
+.login-block input[type=password]:focus:-moz-placeholder {
+	color: transparent;
+} 
+
+.login-block input[type=email]:focus:-ms-input-placeholder,
+.login-block input[type=password]:focus:-ms-input-placeholder {
 	color: transparent;
 }
 
@@ -1106,6 +1133,18 @@ table a:active {
 }
 
 .sub input[type=email]:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.sub input[type=email]:focus::-moz-placeholder {
+	color: transparent;
+} 
+
+.sub input[type=email]:focus:-moz-placeholder {
+	color: transparent;
+} 
+
+.sub input[type=email]:focus:-ms-input-placeholder {
 	color: transparent;
 }
 
@@ -1720,6 +1759,24 @@ fieldset:first-child:hover select {
 .feedback input[type=text]:focus::-webkit-input-placeholder,
 .feedback input[type=email]:focus::-webkit-input-placeholder,
 .feedback textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.feedback input[type=text]:focus::-moz-placeholder,
+.feedback input[type=email]:focus::-moz-placeholder,
+.feedback textarea:focus::-moz-placeholder {
+	color: transparent;
+}
+
+.feedback input[type=text]:focus:-moz-placeholder,
+.feedback input[type=email]:focus:-moz-placeholder,
+.feedback textarea:focus:-moz-placeholder {
+	color: transparent;
+}
+
+.feedback input[type=text]:focus:-ms-input-placeholder,
+.feedback input[type=email]:focus:-ms-input-placeholder,
+.feedback textarea:focus:-ms-input-placeholder {
 	color: transparent;
 }
 
