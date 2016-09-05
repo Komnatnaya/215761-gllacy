@@ -191,13 +191,13 @@ nav {
 	border-radius: 15px;
 }
 
-.menu-link:hover {
+.main-navigation li:hover .menu-link {
 	text-decoration: none;
 	color: #323232;
 	background: #f7f6f3;
 }
 
-.menu-link:active {
+.main-navigation li:active .menu-link {
 	text-decoration: none;
 	color: #323232;
 	background: #f7f6f3;
@@ -232,12 +232,11 @@ nav {
 .drop-menu a {
 	display: block;
 	width: 143px;
-	padding: 6px 20px;
+	padding: 9px 20px;
 	text-decoration: none;
 	color: #323232;
 	font-size: 14px;
 	line-height: 16px;
-	margin: 3px 0;
 }
 
 .drop-menu li:hover {
@@ -247,7 +246,6 @@ nav {
 .drop-menu li:active {
 	background: #f6b5a5;
 }
-
 
 .drop-menu-head {
 	font-weight: bold;
