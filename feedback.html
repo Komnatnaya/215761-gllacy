@@ -5,7 +5,7 @@
         <title>HTML Academy: Глейси</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
     </head>
     <body>
 		<div class="wrapper">
@@ -21,7 +21,7 @@
 									<a class="menu-link" href="catalog.html">Каталог</a>
 									<ul class="drop-menu">
 										<li class="drop-menu-head"><a href="#">Новинки</a></li>
-										<li class="active"><a href="catalog.html">Сливочное</a></li>
+										<li><a href="catalog.html">Сливочное</a></li>
 										<li><a href="#">Щербеты</a></li>
 										<li><a href="#">Фруктовый лед</a></li>
 										<li><a href="#">Мелорин</a></li>
@@ -41,7 +41,8 @@
 							<a class="user-block-btn search-btn" href="#">Поиск</a>
 							<div class="search-block">
 								<form action="#" method="get">
-									<input type="search" name="search" placeholder="Что ищем?">
+									<input type="search" name="search" id="search" placeholder="Что ищем?" required>
+									<label for="search">Что ищем?</label>
 								</form>
 							</div>
 						</div>
@@ -49,8 +50,10 @@
 							<a class="user-block-btn login-btn" href="#">Вход</a>
 							<div class="login-block">
 								<form action="#" method="post">
-									<input type="email" name="login" placeholder="Электронная почта">
-									<input type="password" name="password" placeholder="Пароль">
+									<input type="email" name="login" id="login" placeholder="Электронная почта" required>
+									<label for="login">Электронная почта</label>
+									<input type="password" name="password" id="password" placeholder="Пароль" required>
+									<label class="password" for="password">Пароль</label>
 									<input type="submit" value="Войти" class="btn">
 									<div class="help">
 										<a href="#">Забыли пароль?</a>
@@ -75,9 +78,12 @@
 						<form action="#" method="post">
 							<a href="index.html" class="feedback-close">Закрыть</a>
 							<span>Мы обязательно вам ответим!</span>
-							<input type="text" name="username" placeholder="Как вас зовут?" required>
-							<input type="email" name="user-email" placeholder="Ваша почта для ответа?" required>
-							<textarea rows="5" cols="20" name="text" placeholder="Напишите что-нибудь..." required></textarea>
+							<input type="text" name="username" id="username" placeholder="Как вас зовут?">
+							<label for="username">Как вас зовут?</label>
+							<input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
+							<label class="user-email" for="user-email">Ваша почта для ответа?</label>
+							<textarea rows="5" cols="20" name="text" id="area" placeholder="Напишите что-нибудь..."></textarea>
+							<label class="area" for="area">Напишите что-нибудь...</label>
 							<input type="submit" value="Отправить" class="btn">
 						</form>
 					</div>
@@ -108,7 +114,7 @@
 						</ul>
 					</div>
 					<div class="html-academy">
-						<a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" alt="HTML Academy"></a>
+						<a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" width="108" height="38" alt="HTML Academy"></a>
 						<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
 					</div>
 				</div>

@@ -15,7 +15,7 @@ body > input[type="radio"] {
 }
 
 .site-wrapper {
-	min-width: 1240px;
+	min-width: 1200px;
 	background-color: #849d8f;
 	background-image: url("../img/slide-1.png");
 	background-repeat: no-repeat;
@@ -25,7 +25,7 @@ body > input[type="radio"] {
 }
 
 .wrapper {
-	min-width: 1240px;
+	min-width: 1200px;
 	background-image: -webkit-linear-gradient(top, #9cb0a5 0%, #849d8f 40%);
 	background-image: linear-gradient(180deg, #9cb0a5 0%, #849d8f 40%);
 }
@@ -85,6 +85,7 @@ textarea {
 	line-height: 24px;
 	font-weight: bold;
 	color: #323232;
+	font-family: "Roboto", "Arial", sans-serif;
 }
 
 input::-webkit-input-placeholder {
@@ -145,6 +146,12 @@ textarea:-ms-input-placeholder {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+nav {
+	float: left;
+	min-height: 70px;
+	width: 586px;
 }
                                                                                           
 .index-logo {
@@ -225,12 +232,11 @@ textarea:-ms-input-placeholder {
 .drop-menu a {
 	display: block;
 	width: 143px;
-	padding: 6px 20px;
+	padding: 9px 20px;
 	text-decoration: none;
 	color: #323232;
 	font-size: 14px;
 	line-height: 16px;
-	margin: 3px 0;
 }
 
 .drop-menu li:hover {
@@ -240,7 +246,6 @@ textarea:-ms-input-placeholder {
 .drop-menu li:active {
 	background: #f6b5a5;
 }
-
 
 .drop-menu-head {
 	font-weight: bold;
@@ -377,14 +382,49 @@ textarea:-ms-input-placeholder {
 	padding-right: 15px;
 }
 
-.search-block input[type=search]:hover {
+.search-block label {
+	position: absolute;
+	top: 6px;
+	left: 30px;
+	font-size: 11px;
+	line-height: 13px;
+	color: #999999;
+	display: none;
+}
+
+input[type=search]:hover {
 	box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
-.search-block input[type=search]:focus {
+input[type=search]:focus {
 	box-shadow: inset 0 0 0 1px #8fbdec;
 	border-color: #8fbdec;
 	outline: none;
+}
+
+input[type=search]:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input[type=search]:focus::-moz-placeholder {
+	color: transparent;
+} 
+
+input[type=search]:focus:-moz-placeholder {
+	color: transparent;
+} 
+
+input[type=search]:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+input[type=search]:focus + label {
+	display: block;
+	color: #5b9ddf;
+}
+
+input[type=search]:valid + label {
+	display: block;
 }
 
 .search:hover .search-block {
@@ -422,10 +462,6 @@ textarea:-ms-input-placeholder {
 	margin-right: 8px;
 }
 
-.login-block form {
-	font-family: "Roboto", "Arial", sans-serif;
-}
-
 .login-block {
 	display: none;
 	position: absolute;
@@ -461,6 +497,21 @@ textarea:-ms-input-placeholder {
 	margin-bottom: 20px;
 }
 
+.login-block label {
+	position: absolute;
+	top: 6px;
+	left: 35px;
+	font-size: 11px;
+	line-height: 13px;
+	color: #999999;
+	display: none;
+}
+
+.login-block .password {
+	top: 69px;
+	left: 35px;
+}
+
 .login-block input[type=email]:hover,
 .login-block input[type=password]:hover {
 	box-shadow: inset 0 0 0 1px #c7c6c5;
@@ -471,6 +522,37 @@ textarea:-ms-input-placeholder {
 	box-shadow: inset 0 0 0 1px #8fbdec;
 	border-color: #8fbdec;
 	outline: none;
+}
+
+.login-block input[type=email]:focus::-webkit-input-placeholder,
+.login-block input[type=password]:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.login-block input[type=email]:focus::-moz-placeholder,
+.login-block input[type=password]:focus::-moz-placeholder {
+	color: transparent;
+} 
+
+.login-block input[type=email]:focus:-moz-placeholder,
+.login-block input[type=password]:focus:-moz-placeholder {
+	color: transparent;
+} 
+
+.login-block input[type=email]:focus:-ms-input-placeholder,
+.login-block input[type=password]:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+.login-block input[type=email]:focus + label,
+.login-block input[type=password]:focus + label {
+	display: block;
+	color: #5b9ddf;
+}
+
+.login-block input[type=email]:valid + label,
+.login-block input[type=password]:valid + label {
+	display: block;
 }
 
 .login-block .btn {
@@ -513,7 +595,6 @@ textarea:-ms-input-placeholder {
 .help a:active {
 	color: #e84d37;
 }
-
 
 .login:hover .login-block {
 	display: block;
@@ -618,6 +699,14 @@ table a:active {
 	width: 240px;
 }
 
+.user-basket td {
+	white-space: nowrap;
+}
+
+.user-basket .name-ice {
+	white-space: inherit;
+}
+
 .user-basket .total {
 	font-size: 15px;
 	line-height: 18px;
@@ -633,7 +722,7 @@ table a:active {
 	border-radius: 23px;
 	text-align: center;
 	padding-top: 11px;
-	text-align: 18px;
+	font-size: 18px;
 	line-height: 24px;
 	margin-top: 10px;
 }
@@ -771,26 +860,25 @@ table a:active {
 	min-height: 229px;
 	margin-right: 26px;
 	background: #c40d38 url("../img/fon-raspberry.jpg") no-repeat center top;
+	background-size: cover;
 	border-radius: 15px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 20px;
 }
 
 .discount-item:last-child {
 	margin-right: 0;
 	background: #653a23 url("../img/fon-choсo.jpg") no-repeat center top;
+	background-size: cover;
 }
 
 .discount-item h2 {
-	margin-top: 15px;
-	margin-bottom: 6px;
+	margin: 0;
 }
 
 .discount-item p {
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 18px;
 	line-height: 22px;
-	margin-bottom: 42px;
 }
 
 .discount-item .btn {
@@ -799,6 +887,7 @@ table a:active {
 	padding: 11px 23px;
 	font-size: 18px;
 	line-height: 24px;
+	margin-top: 18px;
 }
 
 .product {
@@ -905,12 +994,12 @@ table a:active {
 	margin-bottom: 40px;
 	color: #323232;
 	padding: 23px 20px;
-	background: #f1e7ce url("../img/wafer-fon.jpg") no-repeat;
+	background: #f1e7ce url("../img/wafer-fon.jpg");
 	border-radius: 14px;
 }
 
 .seo h3 {
-	font-weight: 500;
+	font-weight: bold;
 	margin: 0;
 	padding: 0;
 }
@@ -953,6 +1042,7 @@ table a:active {
 	width: 560px;
 	padding: 22px 250px 20px 20px;
 	background: #ffffff url("../img/fon-strawberry.jpg") no-repeat;
+	background-position: top -224px left -52px;
 	border-radius: 14px;
 }
 
@@ -982,29 +1072,32 @@ table a:active {
 	width: 560px;
 	border-radius: 14px;
 	background-color: #ffffff;
-	border: 5px solid transparent;
-	padding: 10px 20px;
+	padding: 30px 25px;
 	text-align: right;
 }
 
 .sub::before {
 	content: "";
 	position: absolute;
-	top: -5px;
-	left: -5px;
+	top: 0;
+	left: 0;
 	z-index: -1;
 	width: 560px;
-	height: 220px;
+	height: 100%;
 	background: url("../img/fon-post.png") no-repeat top center;
+	background-size: 100% 100%;
 }
 
 .sub p {
 	font-size: 16px;
 	line-height: 22px;
 	color: #5a5a5a;
-	margin-top: 16px;
-	margin-bottom: 35px;
+	margin-top: 0;
 	text-align: left;
+}
+
+.sub form {
+	margin-top: 35px;
 }
 
 .sub input[type=email] {
@@ -1018,6 +1111,16 @@ table a:active {
 	padding-right: 15px;
 }
 
+.sub label {
+	position: absolute;
+	top: 115px;
+	left: 40px;
+	font-size: 11px;
+	line-height: 13px;
+	color: #999999;
+	display: none;
+}
+
 .sub input[type=email]:hover {
 	box-shadow: inset 0 0 0 1px #c7c6c5;
 }
@@ -1025,6 +1128,31 @@ table a:active {
 .sub input[type=email]:focus{
 	box-shadow: inset 0 0 0 1px #8fbdec;
 	border-color: #8fbdec;
+}
+
+.sub input[type=email]:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.sub input[type=email]:focus::-moz-placeholder {
+	color: transparent;
+} 
+
+.sub input[type=email]:focus:-moz-placeholder {
+	color: transparent;
+} 
+
+.sub input[type=email]:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+.sub input[type=email]:focus + label {
+	display: block;
+	color: #5b9ddf;
+}
+
+.sub input[type=email]:valid + label {
+	display: block;
 }
 
 .sub .btn {
@@ -1060,7 +1188,7 @@ table a:active {
 	color: #323232;
 	background: #ffffff;
 	width: 302px;
-	height: 304px;
+	min-height: 304px;
 	border-radius: 13px;
 	padding: 15px 25px;
 	margin-top: 62px;
@@ -1134,7 +1262,6 @@ table a:active {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-	font-family: "Roboto", "Arial", sans-serif;
 }
 
 .filter fieldset {
@@ -1425,71 +1552,71 @@ fieldset:first-child:hover select {
 /*Всплывающая форма*/
 
 @-webkit-keyframes bounce {
-  0%   {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
-  70%  {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  90%  {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+	0%   {
+		-webkit-transform: translateY(-2000px);
+            	transform: translateY(-2000px);
+  	}
+  	70%  {
+    	-webkit-transform: translateY(30px);
+            	transform: translateY(30px);
+	}
+	90%  {
+		-webkit-transform: translateY(-10px);
+				transform: translateY(-10px);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+				transform: translateY(0);
+	}
 }
 
 @keyframes bounce {
-  0%   {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px);
-  }
-  70%  {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  90%  {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+	0%   {
+    	-webkit-transform: translateY(-2000px);
+            	transform: translateY(-2000px);
+  	}
+  	70%  {
+    	-webkit-transform: translateY(30px);
+            	transform: translateY(30px);
+  	}
+  	90%  {
+    	-webkit-transform: translateY(-10px);
+            	transform: translateY(-10px);
+  	}
+  	100% {
+    	-webkit-transform: translateY(0);
+            	transform: translateY(0);
+  	}
 }
 
 @-webkit-keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
+  	0%, 100% {
+    	-webkit-transform: translateX(0);
+            	transform: translateX(0);
+  	}
+  	10%, 30%, 50%, 70%, 90% {
+    	-webkit-transform: translateX(-10px);
+            	transform: translateX(-10px);
+  	}
+  	20%, 40%, 60%, 80% {
+    	-webkit-transform: translateX(10px);
+            	transform: translateX(10px);
+  	}
 }
 
 @keyframes shake {
-  0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
+  	0%, 100% {
+    	-webkit-transform: translateX(0);
+            	transform: translateX(0);
+  	}
+  	10%, 30%, 50%, 70%, 90% {
+    	-webkit-transform: translateX(-10px);
+            	transform: translateX(-10px);
+  	}
+  	20%, 40%, 60%, 80% {
+    	-webkit-transform: translateX(10px);
+            	transform: translateX(10px);
+  	}
 }
 
 .feedback-block {
@@ -1512,20 +1639,6 @@ fieldset:first-child:hover select {
 	background: #f8f7f4;
 	border-radius: 10px;
 	padding: 20px 25px;
-}
-
-.feedback input[type=text]:hover,
-.feedback input[type=email]:hover,
-.feedback textarea:hover {
-	box-shadow: inset 0 0 0 1px #c7c6c5;
-}
-
-.feedback input[type=text]:focus,
-.feedback input[type=email]:focus,
-.feedback textarea:focus {
-	box-shadow: inset 0 0 0 1px #8fbdec;
-	border-color: #8fbdec;
-	outline: none;
 }
 
 .feedback-show {
@@ -1602,6 +1715,69 @@ fieldset:first-child:hover select {
 	padding: 11px 15px;
 }
 
+.feedback label {
+	position: absolute;
+	top: 53px;
+	left: 40px;
+	font-size: 11px;
+	line-height: 13px;
+	color: #999999;
+	display: none;
+}
+
+.feedback .user-email {
+	top: 117px;
+}
+
+.feedback .area {
+	top: 181px;
+}
+
+.feedback input[type=text]:hover,
+.feedback input[type=email]:hover,
+.feedback textarea:hover {
+	box-shadow: inset 0 0 0 1px #c7c6c5;
+}
+
+.feedback input[type=text]:focus,
+.feedback input[type=email]:focus,
+.feedback textarea:focus {
+	box-shadow: inset 0 0 0 1px #8fbdec;
+	border-color: #8fbdec;
+	outline: none;
+}
+
+.feedback input[type=text]:focus + label,
+.feedback input[type=email]:focus + label,
+.feedback textarea:focus + label {
+	display: block;
+	color: #5b9ddf;
+}
+
+.feedback input[type=text]:focus::-webkit-input-placeholder,
+.feedback input[type=email]:focus::-webkit-input-placeholder,
+.feedback textarea:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.feedback input[type=text]:focus::-moz-placeholder,
+.feedback input[type=email]:focus::-moz-placeholder,
+.feedback textarea:focus::-moz-placeholder {
+	color: transparent;
+}
+
+.feedback input[type=text]:focus:-moz-placeholder,
+.feedback input[type=email]:focus:-moz-placeholder,
+.feedback textarea:focus:-moz-placeholder {
+	color: transparent;
+}
+
+.feedback input[type=text]:focus:-ms-input-placeholder,
+.feedback input[type=email]:focus:-ms-input-placeholder,
+.feedback textarea:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
 .feedback .btn {
 	float: right;
 	width: 140px;
@@ -1633,7 +1809,7 @@ fieldset:first-child:hover select {
 
 .main-footer {
 	min-height: 103px;
-	padding: 20px;
+	padding: 20px 0;
 }
 
 .footer-social {

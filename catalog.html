@@ -5,7 +5,7 @@
         <title>HTML Academy: Глейси</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
     </head>
     <body>
 		<div class="wrapper">
@@ -41,7 +41,8 @@
 							<a class="user-block-btn search-btn" href="#">Поиск</a>
 							<div class="search-block">
 								<form action="#" method="get">
-									<input type="search" name="search" placeholder="Что ищем?" required>
+									<input type="search" name="search" id="search" placeholder="Что ищем?" required>
+									<label for="search">Что ищем?</label>
 								</form>
 							</div>
 						</div>
@@ -49,8 +50,10 @@
 							<a class="user-block-btn login-btn" href="#">Вход</a>
 							<div class="login-block">
 								<form action="#" method="post">
-									<input type="email" name="login" placeholder="Электронная почта" required>
-									<input type="password" name="password" placeholder="Пароль" required>
+									<input type="email" name="login" id="login" placeholder="Электронная почта" required>
+									<label for="login">Электронная почта</label>
+									<input type="password" name="password" id="password" placeholder="Пароль" required>
+									<label class="password" for="password">Пароль</label>
 									<input type="submit" value="Войти" class="btn">
 									<div class="help">
 										<a href="#">Забыли пароль?</a>
@@ -169,7 +172,7 @@
 						<a href="#" class="info">Сливочно-кофейное с кусочками шоколада</a>
 						<a href="#" class="btn product-btn">Быстрый просмотр</a>
 					</div>
-					<div class="product-item ice-strawberry">	
+					<div class="product-item">	
 						<div class="product-item-img">
 							<img src="img/ice-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 							<p>355₽<span>/кг</span></p>
@@ -285,7 +288,7 @@
 						</ul>
 					</div>
 					<div class="html-academy">
-						<a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" alt="HTML Academy"></a>
+						<a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" width="108" height="38" alt="HTML Academy"></a>
 						<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
 					</div>
 				</div>
