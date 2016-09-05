@@ -197,7 +197,7 @@ nav {
 	background: #f7f6f3;
 }
 
-.main-navigation li:active .menu-link {
+.menu-link:active {
 	text-decoration: none;
 	color: #323232;
 	background: #f7f6f3;
