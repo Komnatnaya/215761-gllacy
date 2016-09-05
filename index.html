@@ -44,7 +44,8 @@
 							<a class="user-block-btn search-btn" href="#">Поиск</a>
 							<div class="search-block">
 								<form action="#" method="get">
-									<input type="search" name="search" placeholder="Что ищем?" required>
+									<input type="search" name="search" id="search" placeholder="Что ищем?" required>
+									<label for="search">Что ищем?</label>
 								</form>
 							</div>
 						</div>
@@ -52,8 +53,10 @@
 							<a class="user-block-btn login-btn" href="#">Вход</a>
 							<div class="login-block">
 								<form action="#" method="post">
-									<input type="email" name="login" placeholder="Электронная почта" required>
-									<input type="password" name="password" placeholder="Пароль" required>
+									<input type="email" name="login" id="login" placeholder="Электронная почта" required>
+									<label for="login">Электронная почта</label>
+									<input type="password" name="password" id="password" placeholder="Пароль" required>
+									<label class="password" for="password">Пароль</label>
 									<input type="submit" value="Войти" class="btn">
 									<div class="help">
 										<a href="#">Забыли пароль?</a>
@@ -152,7 +155,7 @@
 					<h3>Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
 					<div class="seo-item">
 						<img src="img/mini-ice.svg" height="49" width="49" alt="Мороженое">
-						<p>Все наше мороженое изготавливается на собственном производстве, с использованем современного оборудования и проверенных временем технологий.</p>
+						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 					</div>
 					<div class="seo-item">
 						<img src="img/cow.svg"  height="49" width="49" alt="Коровка">
@@ -175,7 +178,8 @@
 					<div class="sub">
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 						<form action="#" method="post">
-							<input type="email" name="email" placeholder="Электронная почта" required>
+							<input type="email" name="email" id="email" placeholder="Электронная почта" required>
+							<label for="email">Электронная почта</label>
 							<input type="submit" name="email-submit" class="btn" value="Отправить">
 						</form>
 					</div>
@@ -200,9 +204,12 @@
 				<form action="#" method="post">
 					<button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
 					<span>Мы обязательно вам ответим!</span>
-					<input type="text" name="username" placeholder="Как вас зовут?">
-					<input type="email" name="user-email" placeholder="Ваша почта для ответа?">
-					<textarea rows="5" cols="20" name="text" placeholder="Напишите что-нибудь..."></textarea>
+					<input type="text" name="username" id="username" placeholder="Как вас зовут?">
+					<label for="username">Как вас зовут?</label>
+					<input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
+					<label class="user-email" for="user-email">Ваша почта для ответа?</label>
+					<textarea rows="5" cols="20" name="text" id="area" placeholder="Напишите что-нибудь..."></textarea>
+					<label class="area" for="area">Напишите что-нибудь...</label>
 					<input type="submit" value="Отправить" class="btn">
 				</form>
 			</div>
@@ -232,13 +239,13 @@
 						</ul>
 					</div>
 					<div class="html-academy">
-						<a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" alt="HTML Academy"></a>
+						<a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" width="108" height="38" alt="HTML Academy"></a>
 						<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
 					</div>
 				</div>
 			</footer>
 		</div>
 		<script src="js/popup.js"></script>
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=hN0USMIPSgLH8BodhTb9eum4l2gDH-Xz&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=hN0USMIPSgLH8BodhTb9eum4l2gDH-Xz&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
 	</body>
 </html>
