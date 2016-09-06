@@ -1,122 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML Academy: Глейси</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.min.css" rel="stylesheet">
-    </head>
-    <body>
-		<div class="wrapper">
-			<header class="main-header container">
-				<div class="clearfix">
-					<nav>
-						<div class="index-logo">
-							<a href="index.html"><img src="img/index-logo.svg" height="64" width="154" alt="Магазин «Глейси»"></a>
-						</div>
-						<div class="main-navigation">
-							<ul>
-								<li class="menu-catalog">
-									<a class="menu-link" href="catalog.html">Каталог</a>
-									<ul class="drop-menu">
-										<li class="drop-menu-head"><a class="new" href="#">Новинки</a></li>
-										<li><a href="catalog.html">Сливочное</a></li>
-										<li><a href="#">Щербеты</a></li>
-										<li><a href="#">Фруктовый лед</a></li>
-										<li><a class="melorin" href="#">Мелорин</a></li>
-									</ul>
-								</li>
-								<li>
-									<a class="menu-link" href="#">Доставка и оплата</a>
-								</li>
-								<li>
-									<a class="menu-link" href="#">О Компании</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-					<div class="user-block">
-						<div class="search">
-							<a class="user-block-btn search-btn" href="#">Поиск</a>
-							<div class="search-block">
-								<form action="#" method="get">
-									<input type="search" name="search" id="search" placeholder="Что ищем?" required>
-									<label for="search">Что ищем?</label>
-								</form>
-							</div>
-						</div>
-						<div class="login">
-							<a class="user-block-btn login-btn" href="#">Вход</a>
-							<div class="login-block">
-								<form action="#" method="post">
-									<input type="email" name="login" id="login" placeholder="Электронная почта" required>
-									<label for="login">Электронная почта</label>
-									<input type="password" name="password" id="password" placeholder="Пароль" required>
-									<label class="password" for="password">Пароль</label>
-									<input type="submit" value="Войти" class="btn">
-									<div class="help">
-										<a href="#">Забыли пароль?</a>
-										<a href="#">Новая регистрация</a>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="basket">
-							<a class="user-block-btn basket-btn" href="#">Пусто</a>
-						</div>
-					</div>
-					<div class="contact">
-						<span>С 10 до 20, ежедневно</span><br>
-						<span>8 812 450-25-25</span>
-					</div>		
-				</div>
-			</header>
-			<main class="container">
-				<div class="feedback-block">
-					<div class="feedback feedback-show">
-						<form action="#" method="post">
-							<a href="index.html" class="feedback-close">Закрыть</a>
-							<span>Мы обязательно вам ответим!</span>
-							<input type="text" name="username" id="username" placeholder="Как вас зовут?">
-							<label for="username">Как вас зовут?</label>
-							<input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
-							<label class="user-email" for="user-email">Ваша почта для ответа?</label>
-							<textarea rows="5" cols="20" name="text" id="area" placeholder="Напишите что-нибудь..."></textarea>
-							<label class="area" for="area">Напишите что-нибудь...</label>
-							<input type="submit" value="Отправить" class="btn">
-						</form>
-					</div>
-				</div>
-			</main>
-			<footer class="main-footer">
-				<div class="container clearfix">
-					<div class="footer-social">
-						<a class="social-btn social-btn-twit" href="#" title="Твиттер"></a>
-						<a class="social-btn social-btn-inst" href="#" title="Инстаграм"></a>
-						<a class="social-btn social-btn-fb" href="#" title="Фейсбук"></a>
-						<a class="social-btn social-btn-vk" href="#" title="Вконтакте"></a>
-					</div>
-					<div class="footer-nav">
-						<ul class="clearfix">
-							<li>
-								<a href="#">Для поставщиков</a>
-							</li> 
-							<li>
-								<a href="#">Наши документы</a>
-							</li>
-							<li>
-								<a href="#">О производстве</a>
-							</li>
-							<li>
-								<a href="#">Экологические стандарты</a>
-							</li>
-						</ul>
-					</div>
-					<div class="html-academy">
-						<a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" width="108" height="38" alt="HTML Academy"></a>
-						<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
-					</div>
-				</div>
-			</footer>
-		</div>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="main-header container">
+            <div class="clearfix">
+                <nav>
+                    <div class="index-logo">
+                        <a href="index.html"><img src="img/index-logo.svg" height="64" width="154" alt="Магазин «Глейси»">
+                        </a>
+                    </div>
+                    <div class="main-navigation">
+                        <ul>
+                            <li class="menu-catalog">
+                                <a class="menu-link" href="catalog.html">Каталог</a>
+                                <ul class="drop-menu">
+                                    <li class="drop-menu-head"><a class="new" href="#">Новинки</a>
+                                    </li>
+                                    <li><a href="catalog.html">Сливочное</a>
+                                    </li>
+                                    <li><a href="#">Щербеты</a>
+                                    </li>
+                                    <li><a href="#">Фруктовый лед</a>
+                                    </li>
+                                    <li><a class="melorin" href="#">Мелорин</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="menu-link" href="#">Доставка и оплата</a>
+                            </li>
+                            <li><a class="menu-link" href="#">О Компании</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="user-block">
+                    <div class="search">
+                        <a class="user-block-btn search-btn" href="#">Поиск</a>
+                        <div class="search-block">
+                            <form action="#" method="get">
+                                <input type="search" name="search" id="search" placeholder="Что ищем?" required>
+                                <label for="search">Что ищем?</label>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="login">
+                        <a class="user-block-btn login-btn" href="#">Вход</a>
+                        <div class="login-block">
+                            <form action="#" method="post">
+                                <input type="email" name="login" id="login" placeholder="Электронная почта" required>
+                                <label for="login">Электронная почта</label>
+                                <input type="password" name="password" id="password" placeholder="Пароль" required>
+                                <label class="password" for="password">Пароль</label>
+                                <input type="submit" value="Войти" class="btn">
+                                <div class="help">
+                                    <a href="#">Забыли пароль?</a>
+                                    <a href="#">Новая регистрация</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="basket">
+                        <a class="user-block-btn basket-btn" href="#">Пусто</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <span>С 10 до 20, ежедневно</span>
+                    <br>
+                    <span>8 812 450-25-25</span>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="feedback-block">
+                <div class="feedback feedback-show">
+                    <form action="#" method="post">
+                        <a href="index.html" class="feedback-close">Закрыть</a>
+                        <span>Мы обязательно вам ответим!</span>
+                        <input type="text" name="username" id="username" placeholder="Как вас зовут?">
+                        <label for="username">Как вас зовут?</label>
+                        <input type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
+                        <label class="user-email" for="user-email">Ваша почта для ответа?</label>
+                        <textarea rows="5" cols="20" name="text" id="area" placeholder="Напишите что-нибудь..."></textarea>
+                        <label class="area" for="area">Напишите что-нибудь...</label>
+                        <input type="submit" value="Отправить" class="btn">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <div class="footer-social">
+                    <a class="social-btn social-btn-twit" href="#" title="Твиттер"></a>
+                    <a class="social-btn social-btn-inst" href="#" title="Инстаграм"></a>
+                    <a class="social-btn social-btn-fb" href="#" title="Фейсбук"></a>
+                    <a class="social-btn social-btn-vk" href="#" title="Вконтакте"></a>
+                </div>
+                <div class="footer-nav">
+                    <ul class="clearfix">
+                        <li><a href="#">Для поставщиков</a>
+                        </li>
+                        <li><a href="#">Наши документы</a>
+                        </li>
+                        <li><a href="#">О производстве</a>
+                        </li>
+                        <li><a href="#">Экологические стандарты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="html-academy">
+                    <a href="https://htmlacademy.ru/"><img src="img/logo-academy.svg" width="108" height="38" alt="HTML Academy">
+                    </a>
+                    <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
