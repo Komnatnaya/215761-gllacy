@@ -898,10 +898,12 @@ table a:active {
 .product {
 	min-height: 1100px;
 	margin-bottom: 27px;
+	font-size: 0;
 }
 
 .product-item  {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	margin-right: 26px;
 	min-height: 342px;
@@ -940,10 +942,12 @@ table a:active {
 }
 
 .product-item .info {
+	display: inline-block;
 	color: #ffffff;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
+	margin-bottom: 24px;
 }
 
 .product-item .info:hover,
@@ -958,7 +962,7 @@ table a:active {
 .product-item::before {
 	content: "";
 	width: 293px;
-	height: 405px;
+	height: 118%;
 	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 5px;
 	position: absolute;
