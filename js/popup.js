@@ -10,7 +10,7 @@ var textarea = popup.querySelector("[name=text]");
 link.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("feedback-show");
-	overlay.classList.add("overlay-show");					
+	overlay.classList.add("overlay-show");	
 	username.focus();	
 });
 
