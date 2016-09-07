@@ -128,16 +128,6 @@ textarea:-ms-input-placeholder {
 	color: #999999;
 }
 
-select{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background: url(../img/select.png) 98% center no-repeat;
-}
-
-select:hover{
-	background: url(../img/selectHover.png) 98% center no-repeat;
-}
-
 /*Шапка*/
 
 .main-header {
@@ -1320,9 +1310,11 @@ table a:active {
 
 .sort-block select {
 	border-color: transparent;
-	background-color: transparent;
 	color: #ffffff;
 	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent url(../img/select.png) 98% center no-repeat;
 }
 
 .sort-block option {
@@ -1335,6 +1327,7 @@ fieldset:first-child:hover .filter-block{
 
 fieldset:first-child:hover select {
 	color: #323232;
+	background: url(../img/selectHover.png) 98% center no-repeat;
 }
 
 .price-block .filter-block {
