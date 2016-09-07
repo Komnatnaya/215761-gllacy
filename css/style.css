@@ -1305,7 +1305,9 @@ table a:active {
 }
 
 .sort-block .filter-block {
-	padding: 5px 12px 7px 12px;
+	padding: 6px 15px 7px 15px;
+	width: 193px;
+	text-align: center;
 }
 
 .sort-block select {
