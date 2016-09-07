@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="37" viewBox="0 0 32 37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="-2" y="-1" width="32" height="37" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-color="#313235" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Р" class="cls-1" d="M1.644,15.635H5.326V1.135h8.889a32.57,32.57,0,0,1,7.253.5c3.636,0.954,6.409,4.227,6.409,9.318,0,5.818-3.727,8.863-7.091,9.59A30.765,30.765,0,0,1,14.533,21H11.494v2.727H26.514v5.363H11.494V33H5.326V29.089H1.644V23.726H5.326V21H1.644V15.635Zm9.85-9.091v9.045h2.357a13.87,13.87,0,0,0,4.662-.5,4.222,4.222,0,0,0,2.727-4.045A4.205,4.205,0,0,0,17.65,6.771a25,25,0,0,0-4.208-.227H11.494Z"/>
+</svg>

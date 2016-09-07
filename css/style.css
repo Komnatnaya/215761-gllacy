@@ -954,6 +954,11 @@ table a:active {
 	margin-bottom: 24px;
 }
 
+.product-item .ruble {
+	vertical-align: middle;
+	margin-bottom: 6px;
+}
+
 .product-item .info:hover,
 .product-item .info:active,
 .html-academy p a:hover,
@@ -1300,14 +1305,18 @@ table a:active {
 }
 
 .sort-block .filter-block {
-	padding: 5px 12px 7px 12px;
+	padding: 6px 15px 7px 15px;
+	width: 193px;
+	text-align: center;
 }
 
 .sort-block select {
 	border-color: transparent;
-	background-color: transparent;
 	color: #ffffff;
 	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent url(../img/select.png) 98% center no-repeat;
 }
 
 .sort-block option {
@@ -1320,6 +1329,7 @@ fieldset:first-child:hover .filter-block{
 
 fieldset:first-child:hover select {
 	color: #323232;
+	background: url(../img/selectHover.png) 98% center no-repeat;
 }
 
 .price-block .filter-block {
