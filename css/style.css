@@ -128,6 +128,16 @@ textarea:-ms-input-placeholder {
 	color: #999999;
 }
 
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url(../img/select.png) 98% center no-repeat;
+}
+
+select:hover{
+	background: url(../img/selectHover.png) 98% center no-repeat;
+}
+
 /*Шапка*/
 
 .main-header {
@@ -952,6 +962,11 @@ table a:active {
 	font-size: 16px;
 	line-height: 22px;
 	margin-bottom: 24px;
+}
+
+.product-item .ruble {
+	vertical-align: middle;
+	margin-bottom: 6px;
 }
 
 .product-item .info:hover,
