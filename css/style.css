@@ -199,6 +199,7 @@ nav {
 
 .menu-item:hover .menu-link {
   color: #323232;
+  border: none;
 }
 
 .main-navigation .menu-item:active {
@@ -707,6 +708,12 @@ table a:active {
 	cursor: pointer;
 }
 
+.user-basket .mini-ice {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
 .user-basket .name-ice {
 	width: 240px;
 }
@@ -932,11 +939,14 @@ table a:active {
 	margin-bottom: 8px;
 }
 
+.product-item-img img {
+  border-radius: 50%;
+}
+
 .product-item-img .hit {
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-radius: 50%;
 }
 
 .product-item-img p {
